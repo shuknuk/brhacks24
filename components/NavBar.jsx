@@ -1,77 +1,89 @@
-// NavBar.jsx
-
-
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
 
-function NavBar() {
+const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
+
   return (
-    <div>
-      <nav className="w-center blur-bg fixed top-5 rounded-xl border-2 border-green-800 left-10 right-10 z-10">
-        <div className="flex justify-between items-center px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-          <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
-              {/* LOGO */}
-              <Link href="/">
-                <h2 className="text-2xl text-cyan-600 font-bold ">LOGO</h2>
-              </Link>
-              {/* HAMBURGER BUTTON FOR MOBILE */}
-              <div className="md:hidden">
-                <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  {navbar ? (
-                    <Image src="/close.svg" width={30} height={30} alt="logo" />
-                  ) : (
-                    <Image
-                      src="/hamburger-menu.svg"
-                      width={30}
-                      height={30}
-                      alt="logo"
-                      className="focus:border-none active:border-none"
-                    />
-                  )}
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div
-              className={`flex-1 justify-self-center pb-3 mt-10 md:block md:pb-0 md:mt-0 ${
-                navbar ? 'p-12 md:p-0 block' : 'hidden'
-              }`}
-            >
-              <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="pb-3 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent rounded-full bg-green-700 mr-4">
-                  <Link href="#about" onClick={() => setNavbar(!navbar)}>
-                    Home
-                  </Link>
-                </li>
-                <li className="pb-3 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent rounded-full bg-green-700 mr-4">
-                  <Link href="#blog" onClick={() => setNavbar(!navbar)}>
-                    Blogs
-                  </Link>
-                </li>
-                <li className="pb-3 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent rounded-full bg-green-700 mr-4">
-                  <Link href="#contact" onClick={() => setNavbar(!navbar)}>
-                    Contact
-                  </Link>
-                </li>
-                <li className="pb-3 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent rounded-full bg-green-700 mr-4">
-                  <Link href="#projects" onClick={() => setNavbar(!navbar)}>
-                    Sign Up
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
+    <header className="fixed top-5 left-10 right-10 z-10 bg-white border-2 border-green-800 rounded-xl">
+      <div className="flex justify-between items-center h-24 px-5 lg:max-w-7xl mx-auto">
+        <Link href="/">
+          <h1 className="text-4xl text-cyan-600 font-bold">Logo</h1>
+        </Link>
+        <div className="md:hidden">
+          <button
+            className="p-2 rounded-md focus:outline-none focus:border-gray-400"
+            onClick={() => setNavbar(!navbar)}
+          >
+            {navbar ? (
+              <Image src="/close.svg" width={30} height={30} alt="close menu" />
+            ) : (
+              <Image src="/hamburger-menu.svg" width={30} height={30} alt="open menu" />
+            )}
+          </button>
         </div>
-      </nav>
-    </div>
+        <nav className={`flex-col md:flex md:flex-row md:items-center md:gap-8 ${navbar ? 'flex' : 'hidden'} md:block`}>
+          <Link href="#about">
+            <a
+              className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-green-500 md:hover:bg-transparent md:hover:text-green-500 md:bg-transparent md:py-0"
+              onClick={() => setNavbar(false)}
+            >
+              About
+            </a>
+          </Link>
+          <Link href="#faq">
+            <a
+              className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-green-500 md:hover:bg-transparent md:hover:text-green-500 md:bg-transparent md:py-0"
+              onClick={() => setNavbar(false)}
+            >
+              FAQ
+            </a>
+          </Link>
+          <Link href="#schedule">
+            <a
+              className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-green-500 md:hover:bg-transparent md:hover:text-green-500 md:bg-transparent md:py-0"
+              onClick={() => setNavbar(false)}
+            >
+              Schedule
+            </a>
+          </Link>
+          <Link href="#team">
+            <a
+              className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-green-500 md:hover:bg-transparent md:hover:text-green-500 md:bg-transparent md:py-0"
+              onClick={() => setNavbar(false)}
+            >
+              Team
+            </a>
+          </Link>
+          <Link href="#sponsors">
+            <a
+              className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-green-500 md:hover:bg-transparent md:hover:text-green-500 md:bg-transparent md:py-0"
+              onClick={() => setNavbar(false)}
+            >
+              Sponsors
+            </a>
+          </Link>
+          <Link href="#previous-events">
+            <a
+              className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-green-500 md:hover:bg-transparent md:hover:text-green-500 md:bg-transparent md:py-0"
+              onClick={() => setNavbar(false)}
+            >
+              Previous Events
+            </a>
+          </Link>
+          <Link href="#register">
+            <a
+              className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-green-500 md:hover:bg-transparent md:hover:text-green-500 md:bg-transparent md:py-0"
+              onClick={() => setNavbar(false)}
+            >
+              Register
+            </a>
+          </Link>
+        </nav>
+      </div>
+    </header>
   );
-}
+};
 
 export default NavBar;
