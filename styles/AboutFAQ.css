@@ -8,27 +8,34 @@
 }
 
 .footercls {
-  position: bottom;
-  bottom: 0;
+  position: relative;
   background-color: #a4ccac;
   width: 100%;
-  height: rem;
   color: white;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   line-height: 2rem;
+  padding: 20px 0;
+}
 
+.footer_img_cls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.footer_img_cls a {
+  margin: 0 10px; /* Adjust the spacing between logos as needed */
 }
 
 .footer_privacy {
   font-size: 1.5rem;
   font-family: 'Times New Roman', Times, serif;
-
 }
 
-.footer_privacy :hover {
+.footer_privacy:hover {
   transform: scale(1.2);
-
 }
 
 #footer_copyrt {
@@ -39,14 +46,12 @@
 .footer_links {
   color: white;
   text-decoration: none;
-
 }
 
 .git_css:hover,
 .insta_css:hover {
   transform: scale(1.2);
   transition-duration: 0.35s;
-
 }
 
 .footer_links:hover {
@@ -58,14 +63,12 @@
 }
 
 .about {
-
   margin-top: 50px;
   font-size: 2rem;
   font-family: Impact, fantasy;
-  text-indent: 48.5%;
+  text-align: center;
   height: 3rem;
   color: #a4ccac;
-
 }
 
 html {
@@ -73,34 +76,33 @@ html {
 }
 
 .para {
-  margin-left: 632px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'Times New Roman', Times, serif;
-  margin-right: 200px;
   text-align: justify;
+  max-width: 60%;
 }
 
 .logo {
-
-  margin-left: 250px;
-  position: absolute;
+  display: block;
+  margin: 0 auto;
 }
 
-
 .picture {
-  margin-left: 80px;
-  background-image: black;
+  display: block;
+  margin: 20px auto;
 }
 
 .para2 {
   font-family: 'Times New Roman', Times, serif;
-  margin-right: 700px;
-  margin-left: 80px;
+  margin: 20px auto;
   text-align: justify;
+  max-width: 60%;
 }
 
 .imagetwo {
-  float: right;
-  margin-right: 150px;
+  display: block;
+  margin: 20px auto;
 }
 
 .faq {
@@ -113,22 +115,17 @@ html {
   font-weight: normal;
 }
 
-
 .Questions {
   font-family: 'Times New Roman', Times, serif;
   color: #ffffff;
   font-weight: bold;
   font-size: 1.4rem;
-  margin-right: 700px;
-  margin-left: 80px;
+  margin: 0 auto 100px auto;
   text-align: justify;
-  box-sizing: content-box;
   width: 84%;
   border: 0px solid #a4ccac;
   border-collapse: collapse;
   border-radius: 4px;
-  margin-bottom: 100px;
-
 }
 
 .Question1 {
@@ -136,16 +133,13 @@ html {
   color: #3e6f5a;
   font-weight: bold;
   font-size: 1.4rem;
-  margin-right: 700px;
-  margin-left: 80px;
+  margin: 0 auto;
   text-align: justify;
-  box-sizing: content-box;
   width: 84%;
   border-spacing: 4px;
   background-color: #a4ccac;
   border: 0px solid #a4ccac;
   border-radius: 4px;
-
 }
 
 .hover-underline-animation {
