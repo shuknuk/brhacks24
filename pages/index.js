@@ -1,10 +1,14 @@
 import NavBar from '../components/NavBar';
 import TitleScreen from '../components/TitleScreen';
+import About from '../components/About';
+import FAQ from '../components/FAQ';
 
 export default function Home() {
   return (
     <div>
       <NavBar />
+      <About />
+      <FAQ />
       {/* Hero Section */}
       <section
         className="h-screen flex justify-center items-center relative"
