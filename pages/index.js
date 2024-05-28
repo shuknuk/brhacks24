@@ -8,21 +8,11 @@ export default function Home() {
   return (
     <div>
       <NavBar />
+      {/* add spacing */}
+      
       <About />
       <FAQ />
       {/* Hero Section */}
-      <section
-        className="h-screen flex justify-center items-center relative"
-        style={{
-          backgroundImage: 'url(/background-image.jpg)', // replace with your image URL
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <h1 className="text-5xl font-bold text-black">
-          Title screen!
-        </h1>
-      </section>
 
       {/* Rest of your sections */}
       <section id="about" className="text-white h-screen bg-black text-center flex">
