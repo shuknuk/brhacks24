@@ -10,7 +10,7 @@ const NavBar = () => {
         <a href="#" className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-emerald-700">Schedule</a>
         <a href="#" className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-emerald-700">Team</a>
         <a href="#" className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-emerald-700">Sponsors</a>
-        <a href="#" className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-emerald-700">Previous Events</a>
+        {/* <a href="#" className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-emerald-700">Previous Events</a> */}
         <a href="#" className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-emerald-700">Register</a>
       </nav>
     </header>
