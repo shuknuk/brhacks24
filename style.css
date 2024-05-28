@@ -9,7 +9,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+/* body {
     background: whitesmoke;
     min-height: 100vh;
     overflow-x: hidden;
@@ -60,7 +60,7 @@ header nav a:hover
 header nav a:hover > a::not(:hover) {
     background: none;
 
-}
+} */
 
 .title {
     position: relative;
