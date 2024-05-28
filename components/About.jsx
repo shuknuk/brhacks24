@@ -9,7 +9,7 @@ const About = () => {
         <header className="about">ABOUT US.</header>
       </div>
       <div className="bodycls">
-        <div><img src="greencircle.png" className="logo" alt="Logo" /></div>
+        <div><img src="greencircle.png/" className="logo" alt="Logo" /></div>
         <div className="para">
           <p>In the upcoming Fall of 2023, the C.O.D.E. Club is all set to host the Bridgewater-Raritan HS Hackathon, a
             vibrant, full-day, in-person event uniting over 100 high school students from across New Jersey. This hackathon
