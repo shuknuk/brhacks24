@@ -1,17 +1,16 @@
 // index.js
 
 import NavBar from '../components/NavBar';
-import TitleScreen from '../components/TitleScreen';
 import About from '../components/About';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
-import AboutIntro from '../components/AboutIntro';
+import Intro from '../components/Intro';
 
 export default function Home() {
   return (
     <div>
       <NavBar />
-      <AboutIntro />
+      <Intro />
       {/* add spacing */}
       
       {/* <About />

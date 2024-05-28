@@ -1,6 +1,8 @@
+// Intro.jsx
+
 import React, { useEffect } from 'react';
 
-const AboutIntro = () => {
+const Intro = () => {
   useEffect(() => {
     const handleScroll = () => {
       let x = window.scrollY;
@@ -46,12 +48,12 @@ const AboutIntro = () => {
         <h2 id="text" className="absolute text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-shadow-lg">BRHS Hackathon</h2>
       </section>
 
-      <section className="relative bg-[#003329] h-screen p-24">
+      {/* <section className="relative bg-[#003329] h-screen p-24">
         <h2 className="text-white text-4xl font-bold mb-4">About</h2>
         <p className="text-white text-lg">yap yap yap yap ya</p>
-      </section>
+      </section> */}
     </div>
   );
 };
 
-export default AboutIntro;
+export default Intro;
