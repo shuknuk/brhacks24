@@ -2,8 +2,8 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="bg-[#003329]">
-      <div className="bodycls py-15">
+    <div className="bg-[#003329] py-10">
+      <div className="bodycls">
         <div><img src="greencircle.png" className="logo py-10" alt="Logo" /></div>
         <div className="para">
           <p className="font-helmetneue rounded-xl mg-4 bg-emerald-400 shadow-lg px-4 py-2"> 
