@@ -2,10 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="bg-green-500">
-      <div className="headercls">
-        <header className="about ">ABOUT US.</header>
-      </div>
+    <div className="bg-[#003329]">
       <div className="bodycls">
         <div><img src="greencircle.png" className="logo" alt="Logo" /></div>
         <div className="para">
