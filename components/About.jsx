@@ -5,7 +5,7 @@ const About = () => {
     <div className="bg-[#003329] py-10">
       <div className="bodycls">
         <div><img src="greencircle.png" className="logo py-10" alt="Logo" /></div>
-        <div className="para">
+        <div className="para md-flex shrink-0 sm:w-4 sm:right-4 sm:px-5 md:w-1/3 lg:w-30 px-3">
           <p className="font-helmetneue rounded-xl mg-4 bg-emerald-400 shadow-lg px-4 py-2"> 
             In the upcoming Fall of 2023, the C.O.D.E. Club is all set to host the Bridgewater-Raritan HS Hackathon, a vibrant, full-day, in-person event uniting over 100 high school students from across New Jersey. This hackathon has received official approval from the BRHS administration and is currently in the meticulous planning stages by the CODE club team.
           </p>
