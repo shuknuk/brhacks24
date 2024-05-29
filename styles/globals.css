@@ -31,3 +31,8 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: 'HelmetNeue';
+  src: url('../fonts/HelmetNeue.otf') format('opentype');
+}
