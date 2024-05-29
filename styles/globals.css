@@ -36,3 +36,8 @@
   font-family: 'HelmetNeue';
   src: url('../fonts/HelmetNeue.otf') format('opentype');
 }
+
+@font-face {
+  font-family: 'Breulgroteska';
+  src: url('../fonts/breulgroteska.otf') format('opentype'); 
+}
