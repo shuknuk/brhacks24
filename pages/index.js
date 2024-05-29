@@ -13,8 +13,8 @@ export default function Home() {
       <Intro />
       {/* add spacing */}
       
-      {/* <About />
-      <FAQ /> */}
+      <About />
+      <FAQ />
       {/* Hero Section */}
 
       {/* Rest of your sections */}
