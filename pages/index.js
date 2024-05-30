@@ -5,6 +5,7 @@ import About from '../components/About';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import Intro from '../components/Intro';
+import Newabout from '../components/Newabout';
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       <Intro />
       {/* add spacing */}
       
-      <About />
+      {/* <About /> */}
+      <Newabout />
       <FAQ />
       {/* Hero Section */}
 
