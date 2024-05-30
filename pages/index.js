@@ -1,11 +1,10 @@
 // index.js
 
 import NavBar from '../components/NavBar';
-import About from '../components/About';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import Intro from '../components/Intro';
-import Newabout from '../components/Newabout';
+import About from '../components/About';
 
 export default function Home() {
   return (
@@ -14,8 +13,7 @@ export default function Home() {
       <Intro />
       {/* add spacing */}
       
-      {/* <About /> */}
-      <Newabout />
+      <About />
       <FAQ />
       {/* Hero Section */}
 
