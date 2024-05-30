@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="bg-gradient-to-b from-green-300 to-green-900 py-10 px-4 sm:px-6 lg:px-8">
+    <div className="py-10 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: 'url(/forestwhoa.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="flex flex-col items-center">
         <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-7xl mb-8 backdrop-blur-lg bg-green-800/30 rounded-xl p-4">
           <div className="bg-green-500 w-full lg:w-1/2 h-64 rounded-xl flex-shrink-0 mb-4 lg:mb-0 bg-cover bg-center" style={{ backgroundImage: 'url(/forestwhoa.jpg)' }}>
