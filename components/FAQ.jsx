@@ -1,3 +1,5 @@
+// FAQ.jsx
+
 import React, { useState } from 'react';
 
 const FAQ = () => {
