@@ -5,13 +5,14 @@ import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import Intro from '../components/Intro';
 import About from '../components/About';
+import Spacer from '../components/Spacer';
 
 export default function Home() {
   return (
     <div>
       <NavBar />
       <Intro />
-      {/* add spacing */}
+      <Spacer />
       
       <About />
       <FAQ />
