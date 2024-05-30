@@ -40,17 +40,21 @@
 }
 
 
+/* Paragraph Fonts  */
 @font-face {
   font-family: 'HelmetNeue';
   src: url('../fonts/HelmetNeue.otf') format('opentype');
 }
 
-@font-face {
-  font-family: 'Breulgroteska';
-  src: url('../fonts/breulgroteska.otf') format('opentype'); 
-}
 
+
+/* About Us Header */
 @font-face {
   font-family: 'Ubuntu';
   src: url('../fonts/Ubuntu-Regular.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Epicfusion'; 
+  src: url('../fonts/EpicFusion.ttf') format('opentype');
 }

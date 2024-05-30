@@ -45,7 +45,7 @@ const Intro = () => {
         <img src="/pics/leaf.png" id="leaf" alt="leaf" className="absolute top-0 left-0 w-full pointer-events-none" />
         <img src="/pics/plant.png" id="plant" alt="plant" className="absolute top-0 left-0 w-full pointer-events-none" />
         <img src="/pics/tree.png" id="tree" alt="tree" className="absolute top-0 left-0 w-full pointer-events-none" />
-        <h2 id="text" className="absolute text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-shadow-lg">BRHS Hackathon</h2>
+        <h2 id="text" className="absolute text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-epicfusion text-shadow-md ">BRHS Hackathon</h2>
       </section>
 
       {/* <section className="relative bg-[#003329] h-screen p-24">
