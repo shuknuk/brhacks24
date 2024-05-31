@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
+import qanda from '../public/qanda.svg';
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -72,7 +74,10 @@ const FAQ = () => {
 
   return (
     <div className="max-w-4xl mx-auto my-8 p-4">
-      <h1 className="text-3xl font-bold text-center text-green-700 mb-6">FAQ</h1>
+      <div className="flex flex-col items-center mb-6">
+        <Image src={qanda} alt="Q&A" className="h-16 w-16 mb-2" />
+        <h1 className="text-3xl font-bold text-green-700">FAQ</h1>
+      </div>
       {faqData.map((item, index) => (
         <div key={index} className="mb-4">
           <button
