@@ -6,13 +6,13 @@ const About = () => {
       <div className="py-10 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: 'url(/forestwhoa.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="flex flex-col items-center">
           <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-7xl mb-8 backdrop-blur-lg bg-green-800/30 rounded-xl p-4">
-            <div className="bg-green-500 w-full lg:w-1/2 h-64 rounded-xl flex-shrink-0 mb-4 lg:mb-0 bg-cover bg-center" style={{ backgroundImage: 'url(/forestwhoa.jpg)' }}>
+            <div className="bg-green-500 w-full lg:w-1/2 h-64 rounded-xl flex-shrink-0 mb-4 lg:mb-0 bg-cover bg-center" style={{ backgroundImage: 'url(/team.jpeg)' }}>
               {/* Placeholder for image */}
             </div>
             <div className="lg:ml-8 w-full lg:w-1/2 text-white">
               <h2 className="text-4xl font-ubuntu mb-4">About Us</h2>
               <p className="font-helmetneue bg-green-600/60 shadow-lg px-4 py-2 rounded-xl"> 
-                In the upcoming Fall of 2023, the C.O.D.E. Club is all set to host the Bridgewater-Raritan HS Hackathon, a vibrant, full-day, in-person event uniting over 100 high school students from across New Jersey. This hackathon has received official approval from the BRHS administration and is currently in the meticulous planning stages by the CODE club team.
+                In the upcoming Fall of 2024, the C.O.D.E. Club is all set to host the Bridgewater-Raritan HS Hackathon, a vibrant, full-day, in-person event uniting over 100 high school students from across New Jersey. This hackathon has received official approval from the BRHS administration and is currently in the meticulous planning stages by the CODE club team.
               </p>
               <p className="py-3"/>
               <p className="font-helmetneue bg-green-600/60 shadow-lg px-4 py-2 rounded-xl"> 
