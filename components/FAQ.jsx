@@ -73,26 +73,28 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto my-8 p-4">
-      <div className="flex flex-col items-center mb-6">
-        <Image src={qanda} alt="Q&A" className="h-16 w-16 mb-2" />
-        <h1 className="text-3xl font-bold text-green-700">FAQ</h1>
-      </div>
-      {faqData.map((item, index) => (
-        <div key={index} className="mb-4">
-          <button
-            className="w-full text-left p-4 bg-green-200 rounded hover:bg-green-300 focus:outline-none group relative"
-            onClick={() => toggleAccordion(index)}
-          >
-            {item.question}
-            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-green-700 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-bottom-right"></span>
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${activeIndex === index ? 'max-h-screen p-4 bg-green-50' : 'max-h-0'}`}>
-            {item.answer}
-          </div>
+    <section id="faq">
+      <div className="max-w-4xl mx-auto my-8 p-4">
+        <div className="flex flex-col items-center mb-6">
+          <Image src={qanda} alt="Q&A" className="h-16 w-16 mb-2" />
+          <h1 className="text-3xl font-bold text-green-700">FAQ</h1>
         </div>
-      ))}
-    </div>
+        {faqData.map((item, index) => (
+          <div key={index} className="mb-4">
+            <button
+              className="w-full text-left p-4 bg-green-200 rounded hover:bg-green-300 focus:outline-none group relative"
+              onClick={() => toggleAccordion(index)}
+            >
+              {item.question}
+              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-green-700 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-bottom-right"></span>
+            </button>
+            <div className={`overflow-hidden transition-all duration-300 ${activeIndex === index ? 'max-h-screen p-4 bg-green-50' : 'max-h-0'}`}>
+              {item.answer}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
