@@ -1,3 +1,5 @@
+// FAQ.jsx
+
 import React, { useState } from 'react';
 import Image from 'next/image';
 import qanda from '../public/qanda.svg';
