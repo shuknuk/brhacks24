@@ -11,14 +11,18 @@ const FAQ = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const openWin = () => {
+  const linkTree = () => {
     window.open("https://linktr.ee/brhacks");
+  };
+
+  const address = () => {
+    window.open("https://maps.app.goo.gl/Ew9QnzCTgM2tKXAf7")
   };
 
   const faqData = [
     {
       question: "Visit Our LinkTree!",
-      answer: <button className="bg-green-700 text-white font-bold py-2 px-4 rounded hover:bg-green-800" onClick={openWin}>Visit our LinkTree</button>
+      answer: <button className="bg-green-700 text-white font-bold py-2 px-4 rounded hover:bg-green-800" onClick={linkTree}>Visit our LinkTree</button>
     },
     {
       question: "What time does registration start?",
@@ -26,7 +30,7 @@ const FAQ = () => {
     },
     {
       question: "Where is the Hackathon?",
-      answer: "The Hackathon will be hosted in the main building of Bridgewater-Raritan High School. The address is: 600 Garretson Road, Bridgewater, NJ, 08807."
+      answer: <button className="bg-green-700 text-white font-bold py-2 px-4 rounded hover:bg-green-800" onClick={() => address("https://maps.app.goo.gl/Ew9QnzCTgM2tKXAf7")}>600 Garretson Road, Bridgewater, NJ, 08807</button>
     },
     {
       question: "When will the Hackathon be?",
@@ -34,7 +38,8 @@ const FAQ = () => {
     },
     {
       question: "Where should I register?",
-      answer: <a className="text-green-700 font-bold hover:underline" href="https://docs.google.com/forms/d/e/1FAIpQLSdKk9JREyQIzhI4Y4_G-xd2BC8R-eBEEif5zrfqQ_UY4yd8TA/viewform">Register Here!</a>
+      answer: "Coming soon!"
+      // answer: <a className="text-green-700 font-bold hover:underline" href="https://docs.google.com/forms/d/e/1FAIpQLSdKk9JREyQIzhI4Y4_G-xd2BC8R-eBEEif5zrfqQ_UY4yd8TA/viewform">Register Here!</a>
     },
     {
       question: "What should I bring?",

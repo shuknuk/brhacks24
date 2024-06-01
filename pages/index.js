@@ -7,6 +7,7 @@ import Intro from '../components/Intro';
 import About from '../components/About';
 import Spacer from '../components/Spacer';
 import Title from '../components/Title';
+import Team from '../components/Team'; 
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       
       <About />
       <FAQ />
+      <Team />
       {/* Hero Section */}
 
       {/* Rest of your sections */}
