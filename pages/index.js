@@ -1,28 +1,25 @@
 // index.js
 
 import NavBar from '../components/NavBar';
-import About from '../components/About';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import Intro from '../components/Intro';
+import About from '../components/About';
+import Spacer from '../components/Spacer';
+import Title from '../components/Title';
 
 export default function Home() {
   return (
     <div>
       <NavBar />
       <Intro />
-      {/* add spacing */}
+      <Spacer />
       
       <About />
       <FAQ />
       {/* Hero Section */}
 
       {/* Rest of your sections */}
-      <section id="about" className="text-white h-screen bg-black text-center flex">
-        <h1 className="m-auto font-waterfall text-7xl text-purple-600 font-bold">
-          About
-        </h1>
-      </section>
       <section id="blog" className="text-white h-screen bg-purple-900 flex">
         <h1 className="m-auto font-waterfall text-7xl text-white font-bold">
           Blog

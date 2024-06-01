@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
+import qanda from '../public/qanda.svg';
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -14,7 +16,7 @@ const FAQ = () => {
   const faqData = [
     {
       question: "Visit Our LinkTree!",
-      answer: <button className="visit" onClick={openWin}>Visit our LinkTree</button>
+      answer: <button className="bg-green-700 text-white font-bold py-2 px-4 rounded hover:bg-green-800" onClick={openWin}>Visit our LinkTree</button>
     },
     {
       question: "What time does registration start?",
@@ -30,7 +32,7 @@ const FAQ = () => {
     },
     {
       question: "Where should I register?",
-      answer: <a className="rrr" href="https://docs.google.com/forms/d/e/1FAIpQLSdKk9JREyQIzhI4Y4_G-xd2BC8R-eBEEif5zrfqQ_UY4yd8TA/viewform">Register Here!</a>
+      answer: <a className="text-green-700 font-bold hover:underline" href="https://docs.google.com/forms/d/e/1FAIpQLSdKk9JREyQIzhI4Y4_G-xd2BC8R-eBEEif5zrfqQ_UY4yd8TA/viewform">Register Here!</a>
     },
     {
       question: "What should I bring?",
@@ -71,29 +73,28 @@ const FAQ = () => {
   ];
 
   return (
-    <div>
-      <table className="Questions">
-        <thead>
-          <tr>
-            <th className="faq">FAQ</th>
-          </tr>
-        </thead>
-        <tbody className="Question1">
-          {faqData.map((item, index) => (
-            <tr key={index} className="row1">
-              <td className="hover-underline-animation">
-                <button className="accordion" onClick={() => toggleAccordion(index)}>
-                  {item.question}
-                </button>
-                <div className="panel" style={{ display: activeIndex === index ? 'block' : 'none' }}>
-                  {item.answer}
-                </div>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+    <section id="faq">
+      <div className="max-w-4xl mx-auto my-8 p-4">
+        <div className="flex flex-col items-center mb-6">
+          <Image src={qanda} alt="Q&A" className="h-16 w-16 mb-2" />
+          <h1 className="text-3xl font-bold text-green-700">FAQ</h1>
+        </div>
+        {faqData.map((item, index) => (
+          <div key={index} className="mb-4">
+            <button
+              className="w-full text-left p-4 bg-green-200 rounded hover:bg-green-300 focus:outline-none group relative"
+              onClick={() => toggleAccordion(index)}
+            >
+              {item.question}
+              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-green-700 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-bottom-right"></span>
+            </button>
+            <div className={`overflow-hidden transition-all duration-300 ${activeIndex === index ? 'max-h-screen p-4 bg-green-50' : 'max-h-0'}`}>
+              {item.answer}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
