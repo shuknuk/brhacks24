@@ -29,7 +29,7 @@ const NavBar = () => {
         <Link to="faq" smooth={true} duration={700}>
           <p className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-emerald-700">FAQ</p>
         </Link>
-        <Link href="/schedule">
+        <Link to="schedule" smooth={true} duration={700}>
           <p className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-emerald-700">Schedule</p>
         </Link>
         <Link to="team" smooth={true} duration={700}>

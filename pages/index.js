@@ -8,6 +8,7 @@ import About from '../components/About';
 import Spacer from '../components/Spacer';
 import Title from '../components/Title';
 import Team from '../components/Team'; 
+import Schedule from '../components/Schedule';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       
       <About />
       <FAQ />
+      <Schedule />
       <Team />
       <section id="projects" className="text-white h-screen bg-green-900 flex">
         <h1 className="m-auto font-waterfall text-7xl text-white font-bold">
