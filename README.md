@@ -1,9 +1,8 @@
-## Experimental 
+## BR Hacks 24
 
-<h1># experimental</h1>
+The source code files for the official Bridgewater-Raritan High School's 2024 Hackathon!
 
-
-## Getting Started
+## Clone and run on your local machine: 
 
 First, run the development server:
 
