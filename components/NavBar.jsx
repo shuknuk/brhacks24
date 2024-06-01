@@ -4,6 +4,9 @@ import React from 'react';
 import { Link } from 'react-scroll';
 
 const NavBar = () => {
+  const handleAlert = ( ) => {
+    alert("Sponsors and Register coming soon...");
+  }
   return (
     <header className="rounded-xl border-2 border-emerald-700 fixed top-4 left-10 right-10 z-50 backdrop-blur-sm shadow-md flex justify-between items-center h-24 px-5">
       <h1 className="text-4xl">Logo</h1>
@@ -20,10 +23,10 @@ const NavBar = () => {
         <Link href="/team">
           <p className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-emerald-700">Team</p>
         </Link>
-        <Link href="/sponsors">
+        <Link href="/sponsors" onClick={handleAlert}>
           <p className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-emerald-700">Sponsors</p>
         </Link>
-        <Link href="/register">
+        <Link href="/register" onClick={handleAlert}>
           <p className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-emerald-700">Register</p>
         </Link>
       </nav>
