@@ -19,14 +19,6 @@ export default function Home() {
       <About />
       <FAQ />
       <Team />
-      {/* Hero Section */}
-
-      {/* Rest of your sections */}
-      <section id="blog" className="text-white h-screen bg-purple-900 flex">
-        <h1 className="m-auto font-waterfall text-7xl text-white font-bold">
-          Blog
-        </h1>
-      </section>
       <section id="projects" className="text-white h-screen bg-green-900 flex">
         <h1 className="m-auto font-waterfall text-7xl text-white font-bold">
           Sponsors and Register Coming Soon...
