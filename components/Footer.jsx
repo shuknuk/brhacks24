@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer id="footer" className="relative bg-[#598863] w-full text-white text-center font-serif leading-8 py-5">
       <div className="flex justify-center items-center mb-4">
-        <a href="" target="_blank" rel="noopener noreferrer" className="mx-2">
+        <a href="https://www.github.com/shuknuk/brhacks24" target="_blank" rel="noopener noreferrer" className="mx-2">
           <img src="github.png" className="hover:scale-120 transition duration-350" width="55" height="55" alt="github" />
         </a>
         <span>&nbsp;</span>
