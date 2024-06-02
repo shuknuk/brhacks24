@@ -34,7 +34,7 @@ const FAQ = () => {
     },
     {
       question: "When will the Hackathon be?",
-      answer: "Fall of 2023"
+      answer: "Fall of 2024"
     },
     {
       question: "Where should I register?",
