@@ -18,11 +18,7 @@ const NavBar = () => {
   
   return (
     <header className="rounded-xl border-2 border-emerald-700 fixed top-4 left-10 right-10 z-50 backdrop-blur-sm shadow-md flex justify-between items-center h-24 px-5">
-      <h1 className="text-4xl cursor-pointer" onClick={scrollToTop}>
-        <img src="/logo.png" alt="Logo" className="h-12 w-auto" />
-      </h1>
-      {/* <h1 className="text-4xl">Logo</h1> */}
-      <nav className="flex gap-8 cursor-pointer">
+      <nav className="flex items-center gap-4">
         <Link to="about" smooth={true} duration={700}>
           <p className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-emerald-700">About</p>
         </Link>
@@ -32,6 +28,11 @@ const NavBar = () => {
         <Link to="schedule" smooth={true} duration={700}>
           <p className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-emerald-700">Schedule</p>
         </Link>
+      </nav>
+      <h1 className="text-4xl cursor-pointer" onClick={scrollToTop}>
+        <img src="/logo.png" alt="Logo" className="h-20 w-auto" />
+      </h1>
+      <nav className="flex items-center gap-4">
         <Link to="team" smooth={true} duration={700}>
           <p className="text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-emerald-700">Team</p>
         </Link>
@@ -45,5 +46,4 @@ const NavBar = () => {
     </header>
   );
 };
-
 export default NavBar;
