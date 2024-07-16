@@ -1,6 +1,6 @@
-import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// This is before the new re-design 
 
+import React from "react";
 
 const Schedule = () => {
   const scheduleData = [
@@ -73,34 +73,39 @@ const Schedule = () => {
 
   return (
     <section id="schedule">
-      <div className="max-w-4xl mx-auto my-8 p-4 ">
+      <div className="max-w-6xl mx-auto my-8 p-4 bg-white rounded-lg shadow-lg">
         <div className="flex flex-col items-center mb-6">
           <h1 className="text-3xl font-bold text-green-700">Event Schedule</h1>
         </div>
-        <div className="space-y-4">
-          {scheduleData.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col md:flex-row items-center bg-green-100 rounded-lg shadow-md p-4"
-            >
-              <div className="bg-green-500 text-white shadow-md rounded-full px-4 py-2 text-center text-sm md:text-base font-medium hover:bg-green-600 transition-colors w-24 mb-2 md:mb-0">
-                {item.Time}
-              </div>
-              <div className="flex-1 text-center md:text-left px-4">
-                <span className="font-semibold">
-                  <i className="fas fa-calendar-alt mr-2"></i>Event:{" "}
-                </span>
-                <span className="">{item.Event}</span>
-              </div>
-              <div className="text-center md:text-left px-4">
-                <span className="text-amber-700 font-semibold">
-                  <FontAwesomeIcon icon="fa-solid fa-location-dot" />
-                  <i className="fas fa-map-marker-alt mr-2"></i>Location:{" "}
-                </span>
-                <span className="text-amber-800">{item.Location}</span>
-              </div>
-            </div>
-          ))}
+        <div className="overflow-x-auto">
+          <table className="min-w-full bg-white border border-gray-300 rounded-lg">
+            <thead>
+              <tr className="bg-green-200">
+                <th className="py-2 px-4 border-b">
+                  <div className="inline-block bg-green-500 text-white shadow-md rounded-full px-3 py-1 text-sm md:text-base font-semibold hover:bg-green-600 transition-colors">Time</div>
+                </th>
+                <th className="py-2 px-4 border-b">
+                  <div className="inline-block bg-green-500 text-white shadow-md rounded-full px-3 py-1 text-sm md:text-base font-semibold hover:bg-green-600 transition-colors">Event</div>
+                </th>
+                <th className="py-2 px-4 border-b">
+                  <div className="inline-block bg-green-500 text-white shadow-md rounded-full px-3 py-1 text-sm md:text-base font-semibold hover:bg-green-600 transition-colors">Location</div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {scheduleData.map((item, index) => (
+                <tr key={index} className={index % 2 === 0 ? "bg-green-100" : "bg-white"}>
+                  <td className="py-2 px-4 text-left md:text-center border-b">
+                    <div className="inline-block bg-green-500 text-white shadow-md rounded-full px-3 py-1 text-sm md:text-base font-medium hover:bg-green-600 transition-colors">
+                      {item.Time}
+                    </div>
+                  </td>
+                  <td className="py-2 px-4 border-b">{item.Event}</td>
+                  <td className="py-2 px-4 border-b">{item.Location}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
