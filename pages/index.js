@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <NavBar />
       <Intro />
-      <Spacer />
+      {/* <Spacer /> */}
       
       <About />
       <FAQ />
