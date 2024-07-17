@@ -3,6 +3,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import qanda from "../public/qanda.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTree } from '@fortawesome/free-solid-svg-icons';
+
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -21,7 +24,12 @@ const FAQ = () => {
 
   const faqData = [
     {
-      question: "Visit Our LinkTree!",
+      question: (
+        <>
+          <FontAwesomeIcon icon={faTree} className="mr-4" />
+          "Visit Our LinkTree!"
+        </>
+      ),
       answer: (
         <button
           className="bg-green-700 text-white font-bold py-2 px-4 rounded hover:bg-green-800"
