@@ -32,7 +32,7 @@ const About = () => {
             development of mobile apps to support diabetes management, and the
             design of environmentally-conscious solutions.
           </p>
-          <button className="mt-4 bg-green-600 text-white py-2 px-4 rounded-3xl hover:300 nav-item bg-green-600 drop-shadow-lg m-2 text-center">
+          <button className="mt-4 text-white py-2 px-4 rounded-3xl hover:300 nav-item bg-green-600 drop-shadow-lg m-2 text-center">
             Register Now!
           </button>
         </div>
