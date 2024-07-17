@@ -50,34 +50,48 @@ const Team = () => {
   return (
     <section id="team" className="max-w-7xl mx-auto my-8 p-4">
       <h1 className="text-4xl font-bold text-green-700 text-center mb-8">Our Team</h1>
-      <div className="flex flex-col items-center mb-4">
-        <h2 className="text-2xl font-bold text-center">{selectedCategory}</h2>
-        <div className="flex space-x-4 mt-4">
+      <div className="flex flex-col md:flex-row items-start justify-center md:space-x-8">
+        <div className="md:w-1/4 mb-4 md:mb-0">
+          <ul className="space-y-2">
+            {Object.keys(teamData).map((category) => (
+              <li key={category}>
+                <button
+                  className={`w-full text-left p-4 rounded transition-all duration-300 ${
+                    selectedCategory === category ? 'bg-green-700 text-white' : 'bg-green-200 text-green-700 hover:bg-green-300'
+                  }`}
+                  onClick={() => setSelectedCategory(category)}
+                >
+                  <span className="group relative inline-block">
+                    {category}
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-green-700 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-bottom-right"></span>
+                  </span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="md:w-3/4">
           {Object.keys(teamData).map((category) => (
-            <button
+            <div
               key={category}
-              className={`nav-item bg-green-600 drop-shadow-lg p-2 rounded transition-all duration-300 ${
-                selectedCategory === category ? 'bg-green-700 text-white' : 'bg-green-200 text-black hover:bg-green-700'
+              className={`transition-opacity duration-500 ${
+                selectedCategory === category ? 'opacity-100' : 'opacity-0 hidden'
               }`}
-              onClick={() => setSelectedCategory(category)}
             >
-              {category}
-            </button>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                {teamData[category].map((member) => (
+                  <div key={member.name} className="flex items-center space-x-4 p-6 bg-green-50 rounded-lg shadow-lg transition-transform duration-300 hover:shadow-2xl hover:scale-105">
+                    <img src={member.imageUrl} alt={member.name} className="w-24 h-24 rounded-full object-cover" />
+                    <div>
+                      <h2 className="text-2xl font-semibold text-green-700">{member.name}</h2>
+                      <p className="text-green-600">{member.role}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {teamData[selectedCategory].map((member) => (
-          <div key={member.name} className="flex flex-col items-center space-y-4 p-4 bg-green-50 rounded-lg shadow-lg">
-            <img src={member.imageUrl} alt={member.name} className="w-24 h-24 rounded-full object-cover" />
-            <h3 className="text-xl font-semibold text-green-700">{member.name}</h3>
-            <p className="text-green-600">{member.role}</p>
-            {/* <div className="flex flex-col items-center">
-              <span className="text-lg font-bold text-green-700">$575</span>
-              <span className="text-sm text-green-500">Buy Now</span>
-            </div> */}
-          </div>
-        ))}
       </div>
     </section>
   );
