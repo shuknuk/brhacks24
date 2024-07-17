@@ -1,6 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Schedule = () => {
   const scheduleData = [
@@ -34,7 +33,11 @@ const Schedule = () => {
       Event: "3D Printing Workshop",
       Location: "Small Cafeteria - 2hrs",
     },
-    { Time: "1:00 PM", Event: "AI/Machine Learning Workshop", Location: "Room 173" },
+    {
+      Time: "1:00 PM",
+      Event: "AI/Machine Learning Workshop",
+      Location: "Room 173",
+    },
     {
       Time: "1:45 PM",
       Event: "General CS Knowledge Competition",
@@ -83,7 +86,7 @@ const Schedule = () => {
               key={index}
               className="flex flex-col md:flex-row items-center bg-green-100 rounded-lg shadow-md p-4"
             >
-              <div className="bg-green-500 text-white shadow-md rounded-full px-4 py-2 text-center text-sm md:text-base font-medium hover:bg-green-600 transition-colors w-24 mb-2 md:mb-0">
+              <div className="bg-green-500 text-black shadow-md rounded-full px-4 py-2 text-center text-sm md:text-base font-medium hover:bg-green-600 transition-colors w-24 mb-2 md:mb-0">
                 {item.Time}
               </div>
               <div className="flex-1 text-center md:text-left px-4">

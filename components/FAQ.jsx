@@ -21,11 +21,7 @@ const FAQ = () => {
 
   const faqData = [
     {
-      question: (
-        <>
-        Visit Our LinkTree!
-        </>
-      ),
+      question: <>Visit Our LinkTree!</>,
       answer: (
         <button
           className="bg-green-700 text-white font-bold py-2 px-4 rounded hover:bg-green-800"
