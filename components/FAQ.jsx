@@ -3,9 +3,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import qanda from "../public/qanda.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTree } from '@fortawesome/free-solid-svg-icons';
-
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -26,8 +23,7 @@ const FAQ = () => {
     {
       question: (
         <>
-          <FontAwesomeIcon icon={faTree} className="mr-4" />
-          "Visit Our LinkTree!"
+        Visit Our LinkTree!
         </>
       ),
       answer: (
