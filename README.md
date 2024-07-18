@@ -4,7 +4,12 @@ The source code files for the official Bridgewater-Raritan High School's 2024 Ha
 
 ## Clone and run on your local machine: 
 
-First, run the development server:
+First, clone the directory.
+<p>Then make sure to run:</p>
+```bash
+npm install
+```
+Running the development server:
 
 ```bash
 npm run dev
