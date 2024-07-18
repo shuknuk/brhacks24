@@ -1,5 +1,3 @@
-// components/Team.jsx
-
 import { useState } from "react";
 
 const teamData = {
@@ -87,6 +85,12 @@ const teamData = {
 
 const Team = () => {
   const [selectedCategory, setSelectedCategory] = useState("Official");
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+    setIsDropdownOpen(false);
+  };
 
   return (
     <section id="team" className="max-w-7xl mx-auto my-8 p-4">
@@ -95,7 +99,34 @@ const Team = () => {
       </h1>
       <div className="flex flex-col items-center mb-4">
         <h2 className="text-2xl font-bold text-center">{selectedCategory}</h2>
-        <div className="flex space-x-4 mt-4">
+
+        {/* Dropdown menu for mobile view */}
+        <div className="relative mt-4 lg:hidden">
+          <button
+            className="nav-item bg-green-600 drop-shadow-lg p-2 rounded transition-all duration-300 text-white"
+            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+          >
+            {selectedCategory} {isDropdownOpen ? "▲" : "▼"}
+          </button>
+          {isDropdownOpen && (
+            <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-2xl">
+              {Object.keys(teamData).map((category) => (
+                <button
+                  key={category}
+                  className={`block w-full text-left p-2 rounded-2xl hover:bg-green-200 transition-all duration-300 ${
+                    selectedCategory === category ? "bg-green-300" : "bg-white"
+                  }`}
+                  onClick={() => handleCategoryChange(category)}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Horizontal buttons for desktop view */}
+        <div className="hidden lg:flex space-x-4 mt-4">
           {Object.keys(teamData).map((category) => (
             <button
               key={category}
@@ -104,7 +135,7 @@ const Team = () => {
                   ? "bg-green-700 text-white"
                   : "bg-green-200 text-black hover:bg-green-700"
               }`}
-              onClick={() => setSelectedCategory(category)}
+              onClick={() => handleCategoryChange(category)}
             >
               {category}
             </button>
@@ -126,10 +157,6 @@ const Team = () => {
               {member.name}
             </h3>
             <p className="text-green-600">{member.role}</p>
-            {/* <div className="flex flex-col items-center">
-              <span className="text-lg font-bold text-green-700">$575</span>
-              <span className="text-sm text-green-500">Buy Now</span>
-            </div> */}
           </div>
         ))}
       </div>
