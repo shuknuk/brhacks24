@@ -8,7 +8,7 @@ const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleAlert = () => {
-    alert("Sponsors and Register coming soon...");
+    alert("Register form coming soon...");
   };
 
   const scrollToTop = () => {
@@ -24,10 +24,10 @@ const NavBar = () => {
 
   const navItems = [
     { to: "about", text: "About" },
-    { to: "faq", text: "FAQ" },
-    { to: "schedule", text: "Schedule" },
     { to: "team", text: "Team" },
-    { to: "sponsors", text: "Sponsors", onClick: handleAlert },
+    { to: "schedule", text: "Schedule" },
+    { to: "faq", text: "FAQ" },
+    { to: "sponsors", text: "Sponsors" },
     { to: "register", text: "Register", onClick: handleAlert },
   ];
 

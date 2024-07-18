@@ -19,9 +19,9 @@ export default function Home() {
       {/* <Spacer /> */}
 
       <About />
-      <FAQ />
-      <Schedule />
       <Team />
+      <Schedule />
+      <FAQ />
       <Sponsors />
       <Footer />
     </div>
