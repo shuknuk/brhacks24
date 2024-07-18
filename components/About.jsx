@@ -1,5 +1,9 @@
 import React from "react";
 
+const handleAlert = () => {
+  alert("Register form coming soon...");
+};
+
 const About = () => {
   return (
     <section id="about" className="py-16 px-4 sm:px-6 lg:px-8 bg-green-50">
@@ -32,7 +36,10 @@ const About = () => {
             development of mobile apps to support diabetes management, and the
             design of environmentally-conscious solutions.
           </p>
-          <button className="mt-4 text-white py-2 px-4 rounded-3xl hover:300 nav-item bg-green-600 drop-shadow-lg m-2 text-center">
+          <button
+            onClick={handleAlert}
+            className="mt-4 text-white py-2 px-4 rounded-3xl hover:300 nav-item bg-green-600 drop-shadow-lg m-2 text-center"
+          >
             Register Now!
           </button>
         </div>
