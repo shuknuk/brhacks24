@@ -20,19 +20,18 @@ const teamData = {
     },
   ],
   Finance: [
-    { name: "Wesley L.", role: "Finance Member", imageUrl: "/person.svg" },
-    { name: "Victoria W.", role: "Finance Member", imageUrl: "/person.svg" },
-    { name: "Navneet K.", role: "Finance Member", imageUrl: "/person.svg" },
     { name: "Vedaang V.", role: "Finance Member", imageUrl: "/person.svg" },
+    { name: "Victoria W.", role: "Finance Member", imageUrl: "/person.svg" },
     { name: "Soham C.", role: "Finance Member", imageUrl: "/person.svg" },
+    { name: "Anika S.", role: "Finance Member", imageUrl: "/person.svg" },
   ],
   Outreach: [
     { name: "Wesley L.", role: "Outreach Member", imageUrl: "/person.svg" },
     { name: "Karolina T.", role: "Outreach Member", imageUrl: "/person.svg" },
     { name: "Dimah A.", role: "Outreach Member", imageUrl: "/person.svg" },
+    { name: "Darsh S.", role: "Outreach Member", imageUrl: "/person.svg" },
   ],
   "Tech & Design": [
-    { name: "Anika S.", role: "Tech & Design Member", imageUrl: "/person.svg" },
     {
       name: "Andrew Z.",
       role: "Tech & Design Member",
@@ -46,6 +45,11 @@ const teamData = {
     {
       name: "Mohit S.",
       role: "Tech & Design Memeber",
+      imageUrl: "/person.svg",
+    },
+    {
+      name: "Anika S.",
+      role: "Tech & Design -- Contributer",
       imageUrl: "/person.svg",
     },
   ],
