@@ -1,77 +1,33 @@
+// Schedule.jsx
+
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Schedule = () => {
   const scheduleData = [
-    { Time: "9:00 AM", Event: "Check In Opens", Location: "Large Cafeteria" },
-    { Time: "10:00 AM", Event: "Opening Ceremony", Location: "Auditorium" },
-    {
-      Time: "10:30 AM",
-      Event: "Team Bonding During Opening Ceremony",
-      Location: "Large Cafeteria",
-    },
-    { Time: "11:15 AM", Event: "Intro Python", Location: "Room 171" },
-    { Time: "11:15 AM", Event: "Intro to C++", Location: "Room 172" },
-    { Time: "11:15 AM", Event: "Intro to Github", Location: "Room 103" },
-    {
-      Time: "12:00 PM",
-      Event: "Lunch - Chess Tournament Sign ups",
-      Location: "Large Cafeteria",
-    },
-    {
-      Time: "12:30 PM",
-      Event: "Lunch/Chess Tournament",
-      Location: "Large Cafeteria",
-    },
-    {
-      Time: "1:00 PM",
-      Event: "Coding With a Purpose Workshop",
-      Location: "Room 172",
-    },
-    {
-      Time: "1:00 PM",
-      Event: "3D Printing Workshop",
-      Location: "Small Cafeteria - 2hrs",
-    },
-    {
-      Time: "1:00 PM",
-      Event: "AI/Machine Learning Workshop",
-      Location: "Room 173",
-    },
-    {
-      Time: "1:45 PM",
-      Event: "General CS Knowledge Competition",
-      Location: "Large Cafeteria",
-    },
-    { Time: "2:30 PM", Event: "Intro to Java", Location: "Room 103" },
-    {
-      Time: "2:30 PM",
-      Event: "Will AI Be Able To Model Human Emotion?",
-      Location: "Room 173",
-    },
-    { Time: "3:15 PM", Event: "Cybersecurity Workshop", Location: "Room 171" },
-    {
-      Time: "3:15 PM",
-      Event: "Intro to Data Structures and Algorithms",
-      Location: "Room 172",
-    },
-    { Time: "4:00 PM", Event: "Engineering Workshop", Location: "Room 173" },
-    { Time: "4:00 PM", Event: "Neuroscience Workshop", Location: "Room 103" },
-    {
-      Time: "4:45 PM",
-      Event: "Competitive Programming Competition",
-      Location: "Small Cafeteria",
-    },
-    { Time: "5:45 PM", Event: "Game Dev Workshop", Location: "Room 173" },
-    { Time: "5:45 PM", Event: "Women In STEM", Location: "Room 103" },
-    { Time: "6:30 PM", Event: "Data Visualization", Location: "Room 172" },
-    { Time: "6:30 PM", Event: "Web Development", Location: "Room 171" },
-    { Time: "7:00 PM", Event: "Hacking Ends", Location: "Large Cafeteria" },
-    { Time: "7:15 PM", Event: "Dinner", Location: "Large Cafeteria" },
-    { Time: "7:15 PM", Event: "Judging Begins", Location: "Large Cafeteria" },
-    { Time: "7:30 PM", Event: "Cup Stacking", Location: "Large Cafeteria" },
-    { Time: "8:30 PM", Event: "Judging Finishes", Location: "Large Cafeteria" },
-    { Time: "9:00 PM", Event: "Closing Ceremony", Location: "Auditorium" },
+    { Time: "10:00 AM", Event: "Opening", Location: "Auditorium" },
+    { Time: "11:00 AM", Event: "Data Visualization", Location: "Room 104" },
+    { Time: "11:00 AM", Event: "Professor Bajwa", Location: "Auditorium" },
+    { Time: "12:00 PM", Event: "LUNCH", Location: "Big Cafe" },
+    { Time: "1:00 PM", Event: "Competitions", Location: "Room 103" },
+    { Time: "1:00 PM", Event: "AI/ML", Location: "Room 105" },
+    { Time: "1:00 PM", Event: "Girls Who Code", Location: "Room 172" },
+    { Time: "2:00 PM", Event: "Python", Location: "Room 104" },
+    { Time: "2:00 PM", Event: "Professor McKee", Location: "Room 171" },
+    { Time: "2:00 PM", Event: "Professor McKee", Location: "Room 173" },
+    { Time: "3:00 PM", Event: "Automotive Mechanical Club", Location: "Room 103" },
+    { Time: "3:00 PM", Event: "Java", Location: "Room 105" },
+    { Time: "3:00 PM", Event: "SCYE", Location: "Room 172" },
+    { Time: "4:00 PM", Event: "BR Prints", Location: "Room 104" },
+    { Time: "4:00 PM", Event: "CyBR Hacks", Location: "Room 171" },
+    { Time: "4:00 PM", Event: "C++", Location: "Room 173" },
+    { Time: "5:00 PM", Event: "Women in STEM", Location: "Room 103" },
+    { Time: "5:00 PM", Event: "Math and Physics Journal", Location: "Room 105" },
+    { Time: "5:00 PM", Event: "Web Dev", Location: "Room 172" },
+    { Time: "6:00 PM", Event: "Robotics Team", Location: "Room 104" },
+    { Time: "6:00 PM", Event: "Quantum Computing", Location: "Room 171" },
+    { Time: "6:00 PM", Event: "Data Struc", Location: "Room 173" },
+    { Time: "7:00 PM", Event: "DINNER", Location: "Big Cafe" },
   ];
 
   return (
