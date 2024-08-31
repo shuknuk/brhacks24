@@ -25,9 +25,7 @@ const About = () => {
             alt="BRHacks 2023"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <h2 className="text-4xl font-bold text-white">Let's Elevate</h2>
-          </div>
+
         </div>
 
         {/* Text Content */}
@@ -71,7 +69,7 @@ const About = () => {
           <div className="text-center">
             <button
               onClick={handleAlert}
-              className="mt-4 text-white py-2 px-6 rounded-lg bg-blue-600 hover:bg-blue-700 shadow-lg"
+              className="mt-4 text-white py-2 px-6 rounded-lg bg-green-600 hover:bg-green-900 shadow-lg"
             >
               Register Now!
             </button>
