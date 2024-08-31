@@ -35,7 +35,7 @@ const About = () => {
         alt="BRHacks 2023"
         className="w-full h-full object-cover"
       />
-      <p className="text-sm text-gray-500 text-center mt">Click to Enlarge</p>
+      <p className="text-sm text-gray-500 text-center mt-3 mt">Click to Enlarge</p>
       {/* Register Button */}
       <div className="text-center mb-4">
         <button
