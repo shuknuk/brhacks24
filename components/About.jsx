@@ -83,7 +83,7 @@ const About = () => {
         <img
           src="/LeafSvg2.svg"
           alt="Leaf Decoration"
-          className="absolute bottom-[-80px] right-[-20px] "
+          className="absolute bottom-[-77px] right-[-20px] "
           // width and height doesn't matter bcuz it's an svg
         />
         <p className="text-lg text-gray-700 p-2">
