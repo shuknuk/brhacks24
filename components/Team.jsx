@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const teamData = {
   Official: [
@@ -44,12 +45,12 @@ const teamData = {
     },
     {
       name: "Mohit S.",
-      role: "Tech & Design Memeber",
+      role: "Tech & Design Member",
       imageUrl: "/person.svg",
     },
     {
       name: "Anika S.",
-      role: "Tech & Design -- Contributer",
+      role: "Tech & Design -- Contributor",
       imageUrl: "/person.svg",
     },
   ],
@@ -117,7 +118,7 @@ const Team = () => {
               {Object.keys(teamData).map((category) => (
                 <button
                   key={category}
-                  className={`block w-full text-left p-2 rounded-2xl hover:bg-green-200 transition-all duration-300 ${
+                  className={`block w-full text-center p-2 rounded-2xl hover:bg-green-200 transition-all duration-300 ${
                     selectedCategory === category ? "bg-green-300" : "bg-white"
                   }`}
                   onClick={() => handleCategoryChange(category)}
@@ -146,23 +147,30 @@ const Team = () => {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {teamData[selectedCategory].map((member) => (
-          <div
-            key={member.name}
-            className="flex flex-col items-center space-y-4 p-4 bg-green-50 rounded-lg shadow-lg"
-          >
-            <img
-              src={member.imageUrl}
-              alt={member.name}
-              className="w-24 h-24 rounded-full object-cover"
-            />
-            <h3 className="text-xl font-semibold text-green-700">
-              {member.name}
-            </h3>
-            <p className="text-green-600">{member.role}</p>
-          </div>
-        ))}
+
+      {/* Fade animations */}
+      <div className="fade-container">
+        <TransitionGroup className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {teamData[selectedCategory].map((member) => (
+            <CSSTransition
+              key={member.name}
+              timeout={300}
+              classNames="fade"
+            >
+              <div className="flex flex-col items-center space-y-4 p-4 bg-green-50 rounded-lg shadow-lg">
+                <img
+                  src={member.imageUrl}
+                  alt={member.name}
+                  className="w-24 h-24 rounded-full object-cover"
+                />
+                <h3 className="text-xl font-semibold text-green-700">
+                  {member.name}
+                </h3>
+                <p className="text-green-600">{member.role}</p>
+              </div>
+            </CSSTransition>
+          ))}
+        </TransitionGroup>
       </div>
     </section>
   );
