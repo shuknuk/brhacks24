@@ -1,3 +1,5 @@
+// About.jsx
+
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -23,7 +25,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="about" className="py-20 px-4 sm:px-6 p-8 lg:px-8 bg-[url('/spotts.svg')] bg-fafaf4 bg-cover bg-center">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:space-x-8">
         <div
           className="w-full lg:w-1/2 mb-8 lg:mb-0 relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
