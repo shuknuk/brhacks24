@@ -41,9 +41,15 @@ const Schedule = () => {
           {scheduleData.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row items-center bg-green-100 rounded-lg shadow-md p-4"
+              className="flex flex-col md:flex-row items-center bg-green-200 rounded-lg shadow-md p-4"
             >
-              <div className="bg-green-500 text-black shadow-md rounded-full px-4 py-2 text-center text-sm md:text-base font-medium hover:bg-green-600 transition-colors w-24 mb-2 md:mb-0">
+              {/* Green Leaf Image */}
+              <img
+                src="/butterfly.svg"
+                alt="Leaf Decoration"
+                className="w-24 p-3 h-24 md:mb-0"
+              />
+              <div className="bg-green-500 text-black shadow-md rounded-full px-4 py-2 text-center text-sm md:text-base font-medium hover:bg-green-700 transition-colors w-24 mb-2 md:mb-0">
                 {item.Time}
               </div>
               <div className="flex-1 text-center md:text-left px-4">
