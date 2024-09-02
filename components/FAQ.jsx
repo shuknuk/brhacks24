@@ -101,8 +101,24 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq">
-      <div className="max-w-6xl mx-auto my-8 p-4">
+    <section
+      id="faq"
+      className="py-20 px-4 sm:px-6 lg:px-8 relative"
+    >
+      {/* Rotated Background Image */}
+      <div
+        className="absolute inset-0 w-full h-full"
+        style={{
+          backgroundImage: "url(/wooden_scroll1.svg)",
+          backgroundSize: "110% 110%",
+          backgroundPosition: "center top 20px",
+          transform: "",
+          transformOrigin: "center center",
+          zIndex: -1,
+        }}
+      />
+
+      <div className="max-w-6xl mx-auto my-8 p-4 relative z-10">
         <div className="flex flex-col items-center mb-6">
           <Image src={qanda} alt="Q&A" className="h-16 w-16 mb-2" />
           <h1 className="text-3xl font-bold text-green-700">FAQ</h1>
