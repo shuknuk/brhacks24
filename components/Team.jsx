@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const teamData = {
   Official: [
@@ -9,16 +10,8 @@ const teamData = {
     { name: "Divyansha N.", role: "Finance Head", imageUrl: "/person.svg" },
     { name: "Joon D.", role: "Outreach Head", imageUrl: "/person.svg" },
     { name: "Afraz A.", role: "Social Media Head", imageUrl: "/person.svg" },
-    {
-      name: "Arnav D.",
-      role: "Events & Logistics Head",
-      imageUrl: "/person.svg",
-    },
-    {
-      name: "Ayushmaan M.",
-      role: "Events & Logistics Head",
-      imageUrl: "/person.svg",
-    },
+    { name: "Arnav D.", role: "Events & Logistics Head", imageUrl: "/person.svg" },
+    { name: "Ayushmaan M.", role: "Events & Logistics Head", imageUrl: "/person.svg" },
   ],
   Finance: [
     { name: "Vedaang V.", role: "Finance Member", imageUrl: "/person.svg" },
@@ -33,64 +26,36 @@ const teamData = {
     { name: "Darsh S.", role: "Outreach Member", imageUrl: "/person.svg" },
   ],
   "Tech & Design": [
-    {
-      name: "Andrew Z.",
-      role: "Tech & Design Member",
-      imageUrl: "/person.svg",
-    },
-    {
-      name: "Praghya B.",
-      role: "Tech & Design Member",
-      imageUrl: "/person.svg",
-    },
-    {
-      name: "Mohit S.",
-      role: "Tech & Design Member",
-      imageUrl: "/person.svg",
-    },
-    {
-      name: "Anika S.",
-      role: "Tech & Design -- Contributor",
-      imageUrl: "/person.svg",
-    },
+    { name: "Andrew Z.", role: "Tech & Design Member", imageUrl: "/person.svg" },
+    { name: "Praghya B.", role: "Tech & Design Member", imageUrl: "/person.svg" },
+    { name: "Mohit S.", role: "Tech & Design Member", imageUrl: "/person.svg" },
+    { name: "Anika S.", role: "Tech & Design -- Contributor", imageUrl: "/person.svg" },
   ],
   "Social Media": [
-    {
-      name: "Harshini Y.",
-      role: "Social Media Member",
-      imageUrl: "/person.svg",
-    },
+    { name: "Harshini Y.", role: "Social Media Member", imageUrl: "/person.svg" },
     { name: "Vedika S.", role: "Social Media Member", imageUrl: "/person.svg" },
     { name: "Sri K.", role: "Social Media Member", imageUrl: "/person.svg" },
     { name: "Neha A.", role: "Social Media Member", imageUrl: "/person.svg" },
   ],
   "Events & Logistics": [
-    {
-      name: "Kush D.",
-      role: "Events & Logistics Member",
-      imageUrl: "/person.svg",
-    },
-    {
-      name: "Advik J.",
-      role: "Events & Logistics Member",
-      imageUrl: "/person.svg",
-    },
-    {
-      name: "Harshit K.",
-      role: "Events & Logistics Member",
-      imageUrl: "/person.svg",
-    },
-    {
-      name: "Rebecca P.",
-      role: "Events & Logistics Member",
-      imageUrl: "/person.svg",
-    },
+    { name: "Kush D.", role: "Events & Logistics Member", imageUrl: "/person.svg" },
+    { name: "Advik J.", role: "Events & Logistics Member", imageUrl: "/person.svg" },
+    { name: "Harshit K.", role: "Events & Logistics Member", imageUrl: "/person.svg" },
+    { name: "Rebecca P.", role: "Events & Logistics Member", imageUrl: "/person.svg" },
   ],
 };
 
 const Team = () => {
   const [selectedCategory, setSelectedCategory] = useState("Official");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500, // Duration of animation (ms)
+      easing: "ease-in-out", // Easing function
+      once: true, // Animation happens only once while scrolling down
+    });
+  }, []);
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
@@ -130,7 +95,7 @@ const Team = () => {
           )}
         </div>
 
-        {/* Horizontal buttons for desktop view */}
+        {/* Horizontal layout for desktop view */}
         <div className="hidden lg:flex space-x-4 mt-4">
           {Object.keys(teamData).map((category) => (
             <button
@@ -150,27 +115,29 @@ const Team = () => {
 
       {/* Fade animations */}
       <div className="fade-container">
-        <TransitionGroup className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {teamData[selectedCategory].map((member) => (
-            <CSSTransition
+            <div
               key={member.name}
-              timeout={300}
-              classNames="fade"
+              className="relative mb-10 flex flex-col items-center space-y-5 p-3 bg-green-50 rounded-lg shadow-lg"
+              data-aos="fade-up" // Apply AOS fade-up animation
+              data-aos-duration="500" // Duration of the animation
             >
-              <div className="flex flex-col items-center space-y-4 p-4 bg-green-50 rounded-lg shadow-lg">
-                <img
-                  src={member.imageUrl}
-                  alt={member.name}
-                  className="w-24 h-24 rounded-full object-cover"
-                />
-                <h3 className="text-xl font-semibold text-green-700">
-                  {member.name}
-                </h3>
-                <p className="text-green-600">{member.role}</p>
-              </div>
-            </CSSTransition>
+              <img
+                src={member.imageUrl}
+                alt={member.name}
+                className="w-24 h-24 rounded-full object-cover"
+              />
+              <img
+                src="/logNew.svg"
+                alt="logNew"
+                className="w-21 h-15 absolute bottom-[-45px] "
+              />
+              <h3 className="text-xl font-semibold text-green-700">{member.name}</h3>
+              <h3 className="text-black z-0 shadow-sm ml-8 font-extrabold relative top-2">{member.role}</h3>
+            </div>
           ))}
-        </TransitionGroup>
+        </div>
       </div>
     </section>
   );

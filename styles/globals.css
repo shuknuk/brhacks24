@@ -4,6 +4,11 @@
 @import '@fortawesome/fontawesome-free/css/all.css';
 
 
+body {
+  @apply bg-green-50;
+}
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,22 +22,6 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
 
 
 /* For NavBar */
@@ -62,17 +51,11 @@
   background-clip: text;
 }
 
-
-
-
-
 /* Paragraph Fonts  */
 @font-face {
   font-family: 'HelmetNeue';
   src: url('../fonts/HelmetNeue.otf') format('opentype');
 }
-
-
 
 /* About Us Header */
 @font-face {
