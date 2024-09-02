@@ -111,7 +111,7 @@ const FAQ = () => {
           {faqData.map((item, index) => (
             <div key={index}>
               <button
-                className="w-full text-left p-4 bg-green-200 rounded hover:bg-green-300 focus:outline-none group relative"
+                className="w-full text-left p-4 bg-green-200 shadow-md rounded hover:bg-green-300 focus:outline-none group relative"
                 onClick={() => toggleAccordion(index)}
               >
                 {item.question}
