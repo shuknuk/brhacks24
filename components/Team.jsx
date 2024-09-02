@@ -95,7 +95,7 @@ const Team = () => {
           )}
         </div>
 
-        {/* Horizontal buttons for desktop view */}
+        {/* Horizontal layout for desktop view */}
         <div className="hidden lg:flex space-x-4 mt-4">
           {Object.keys(teamData).map((category) => (
             <button
@@ -134,7 +134,7 @@ const Team = () => {
                 className="w-21 h-15 absolute bottom-[-45px] "
               />
               <h3 className="text-xl font-semibold text-green-700">{member.name}</h3>
-              <h3 className="text-black z-0 shadow-sm ml-8 font-extrabold">{member.role}</h3>
+              <h3 className="text-black z-0 shadow-sm ml-8 font-extrabold relative top-2">{member.role}</h3>
             </div>
           ))}
         </div>
