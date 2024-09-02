@@ -23,13 +23,23 @@ body {
   }
 }
 
+/* TailwindCSS Classes: */
+.parallax {
+  @apply relative flex items-center justify-center h-screen overflow-hidden;
+}
+
+.parallax img {
+  @apply absolute bottom-0 w-full pointer-events-none;
+}
+
+#title {
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl;
+}
 
 /* For NavBar */
 .nav-item {
   @apply text-lg font-semibold px-4 py-2 rounded-full transition duration-300 hover:bg-emerald-700 hover:text-white;
 }
-
-
 
 /* Spacer.css */
 .spacer-background {
