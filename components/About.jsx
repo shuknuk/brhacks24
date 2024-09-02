@@ -28,7 +28,7 @@ const About = () => {
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-[url('/spotts.svg')] bg-contain bg-center">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:space-x-8">
         <div
-          className="w-full lg:w-1/2 mb-8 lg:mb-0 relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
+          className="w-full lg:w-1/2 mb-8 bg-emerald-100 lg:mb-0 relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
           onClick={toggleModal}
         >
           <img
@@ -36,7 +36,9 @@ const About = () => {
             alt="BRHacks 2023"
             className="w-full h-full object-cover"
           />
-          <p className="text-sm text-gray-500 text-center mt-3">Click to Enlarge</p>
+          {/* blur background 
+          <div className="absolute inset-0 bg-black opacity-50"></div> */}
+          <p className="text-sm text-gray-500 text-center font-bold mt-3">Click to Enlarge</p>
           {/* Register Button */}
           <div className="text-center mb-4">
             <button
