@@ -1,3 +1,5 @@
+// Team.jsx
+
 import { useState, useEffect } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
@@ -157,7 +159,7 @@ const Team = () => {
               timeout={300}
               classNames="fade"
             >
-            <div className="relative mb-10 flex flex-col items-center space-y-2 p-3 bg-green-50 rounded-lg shadow-lg">
+            <div className="relative mb-10 flex flex-col items-center space-y-5 p-3 bg-green-50 rounded-lg shadow-lg">
               <img
                 src={member.imageUrl}
                 alt={member.name}
@@ -169,7 +171,7 @@ const Team = () => {
                 className="w-21 h-15 absolute bottom-[-45px] "
               />
               <h3 className="text-xl font-semibold text-green-700">{member.name}</h3>
-              <p className="text-green-600">{member.role}</p>
+              <p className="text-green-600 ">{member.role}</p>
             </div>
             </CSSTransition>
           ))}
