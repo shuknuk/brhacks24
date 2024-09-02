@@ -157,17 +157,20 @@ const Team = () => {
               timeout={300}
               classNames="fade"
             >
-              <div className="flex flex-col items-center space-y-4 p-4 bg-green-50 rounded-lg shadow-lg">
-                <img
-                  src={member.imageUrl}
-                  alt={member.name}
-                  className="w-24 h-24 rounded-full object-cover"
-                />
-                <h3 className="text-xl font-semibold text-green-700">
-                  {member.name}
-                </h3>
-                <p className="text-green-600">{member.role}</p>
-              </div>
+            <div className="relative mb-10 flex flex-col items-center space-y-2 p-3 bg-green-50 rounded-lg shadow-lg">
+              <img
+                src={member.imageUrl}
+                alt={member.name}
+                className="w-24 h-24 rounded-full object-cover"
+              />
+              <img
+                src="/logNew.svg"
+                alt="spotts"
+                className="w-21 h-15 absolute bottom-[-45px] "
+              />
+              <h3 className="text-xl font-semibold text-green-700">{member.name}</h3>
+              <p className="text-green-600">{member.role}</p>
+            </div>
             </CSSTransition>
           ))}
         </TransitionGroup>
