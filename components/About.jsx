@@ -25,7 +25,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 p-8 lg:px-8 bg-[url('/spotts.svg')] bg-fafaf4 bg-cover bg-center">
+    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-[url('/spotts.svg')] bg-contain bg-center">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:space-x-8">
         <div
           className="w-full lg:w-1/2 mb-8 lg:mb-0 relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
