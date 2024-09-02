@@ -134,7 +134,7 @@ const Team = () => {
                 className="w-21 h-15 absolute bottom-[-45px] "
               />
               <h3 className="text-xl font-semibold text-green-700">{member.name}</h3>
-              <h3 className="text-black z-0 shadow-sm ml-8 font-extrabold relative top-2">{member.role}</h3>
+              <h3 className="text-black z-0 ml-8 font-extrabold relative top-2">{member.role}</h3>
             </div>
           ))}
         </div>
