@@ -27,24 +27,64 @@ export default function Home() {
 
   return (
     <section className="parallax">
-      <Image src="/pics/hill1.png" id="hill1" alt="Hill 1" layout="fill" />
-      <Image src="/pics/hill2.png" id="hill2" alt="Hill 2" layout="fill" />
-      <Image src="/pics/hill3.png" id="hill3" alt="Hill 3" layout="fill" />
-      <Image src="/pics/tree.png" id="tree" alt="Tree" layout="fill" />
-      <Image src="/pics/leaf.png" id="leaf" alt="Leaf" layout="fill" />
+      <div id="hill1-wrapper" className="absolute inset-0 w-full h-full">
+        <Image
+          src="/pics/hill1.svg"
+          id="hill1"
+          alt="Hill 1"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      <div id="hill2-wrapper" className="absolute inset-0 w-full h-full">
+        <Image
+          src="/pics/hill2.svg"
+          id="hill2"
+          alt="Hill 2"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      <div id="hill3-wrapper" className="absolute inset-0 w-full h-full">
+        <Image
+          src="/pics/hill3.svg"
+          id="hill3"
+          alt="Hill 3"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      <div id="tree-wrapper" className="absolute inset-0 w-full h-full">
+        <Image
+          src="/pics/tree.svg"
+          id="tree"
+          alt="Tree"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      <div id="leaf-wrapper" className="absolute inset-0 w-full h-full">
+        <Image
+          src="/pics/leaf.svg"
+          id="leaf"
+          alt="Leaf"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
       <h2
         id="title"
-        className="text-center font-black uppercase leading-none "
+        className="text-center font-black uppercase leading-none"
         style={{
           fontSize: "100px",
           textShadow: "2px 4px 6px rgba(0, 0, 0, 0.5)",
-          fontFamily: "'TT-Paplane', sans-serif", 
+          fontFamily: "'TT-Paplane', sans-serif",
         }}
       >
         BRHS Hacks
       </h2>
 
-      {/* <Image src="/pics/plant.png" id="plant" alt="Plant" layout="fill" /> */}
+      {/* <Image src="/pics/plant.svg" id="plant" alt="Plant" layout="fill" /> */}
     </section>
   );
 }
