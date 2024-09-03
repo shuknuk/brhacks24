@@ -71,7 +71,7 @@ const Team = () => {
         <h2 className="text-2xl font-bold text-center">{selectedCategory}</h2>
 
         {/* Dropdown menu for mobile view */}
-        <div className="relative mt-4 lg:hidden">
+        <div className="relative mt-4 lg:hidden z-20">
           <button
             className="nav-item bg-green-600 drop-shadow-lg p-2 rounded transition-all duration-300 text-white"
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -79,7 +79,7 @@ const Team = () => {
             {selectedCategory} {isDropdownOpen ? "▲" : "▼"}
           </button>
           {isDropdownOpen && (
-            <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-2xl">
+            <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-2xl z-50">
               {Object.keys(teamData).map((category) => (
                 <button
                   key={category}

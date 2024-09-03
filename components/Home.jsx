@@ -36,7 +36,7 @@ export default function Home() {
         BRHS Hacks
         </h2>
 
-      <Image src="/pics/plant.png" id="plant" alt="Plant" layout="fill" />
+      {/* <Image src="/pics/plant.png" id="plant" alt="Plant" layout="fill" /> */}
     </section>
   );
 }
