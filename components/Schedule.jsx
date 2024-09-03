@@ -52,18 +52,18 @@ const Schedule = () => {
               <div className="bg-green-500 text-black shadow-md rounded-full px-4 py-2 text-center text-sm md:text-base font-medium hover:bg-green-700 transition-colors w-24 mb-2 md:mb-0">
                 {item.Time}
               </div>
-              <div className="flex-1 text-center md:text-left px-4">
+              <div className="flex-1 text-center text-lg md:text-left px-4">
                 <span className="font-semibold">
-                  <i className="fas fa-calendar-alt mr-2"></i>Event:{" "}
+                  <i className="fas fa-calendar-alt text-xl mr-2"></i>Event:{" "}
                 </span>
                 <span className="">{item.Event}</span>
               </div>
               <div className="text-center md:text-left px-4">
                 <span className="text-amber-700 font-semibold">
                   <FontAwesomeIcon icon="fa-solid fa-location-dot" />
-                  <i className="fas fa-map-marker-alt mr-2"></i>Location:{" "}
+                  <i className="fas fa-map-marker-alt font-bold text-lg mr-2"></i>Location:{" "}
                 </span>
-                <span className="text-amber-800">{item.Location}</span>
+                <span className="text-amber-800 text-lg font-bold">{item.Location}</span>
               </div>
             </div>
           ))}

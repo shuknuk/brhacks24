@@ -124,14 +124,14 @@ const FAQ = () => {
   }, [controls]);
 
   return (
-    <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8 relative">
+    <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8 relative ">
       {/* Rotated Background Image */}
       <div
         className="absolute inset-0 w-full h-full"
         style={{
           backgroundImage: "url(/wooden_scroll1.svg)",
-          backgroundSize: "110% 110%",
-          backgroundPosition: "center top 20px",
+          backgroundSize: "100% 100%",
+          backgroundPosition: "center top 30px",
           transform: "",
           transformOrigin: "center center",
           zIndex: -1,

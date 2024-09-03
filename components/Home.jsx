@@ -32,9 +32,17 @@ export default function Home() {
       <Image src="/pics/hill3.png" id="hill3" alt="Hill 3" layout="fill" />
       <Image src="/pics/tree.png" id="tree" alt="Tree" layout="fill" />
       <Image src="/pics/leaf.png" id="leaf" alt="Leaf" layout="fill" />
-      <h2 id="title" className=" text-center font-black uppercase leading-none fancy" style={{ fontSize: '80px', textShadow: '2px 4px 6px rgba(0, 0, 0, 0.5)' }}>
+      <h2
+        id="title"
+        className="text-center font-black uppercase leading-none "
+        style={{
+          fontSize: "100px",
+          textShadow: "2px 4px 6px rgba(0, 0, 0, 0.5)",
+          fontFamily: "'TT-Paplane', sans-serif", 
+        }}
+      >
         BRHS Hacks
-        </h2>
+      </h2>
 
       {/* <Image src="/pics/plant.png" id="plant" alt="Plant" layout="fill" /> */}
     </section>

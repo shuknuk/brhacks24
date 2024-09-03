@@ -4,8 +4,9 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="relative bg-[#714D22] w-full text-white text-center font-serif leading-8 py-5"
+      className="relative bg-[#714D22] w-full text-white text-center leading-8 py-5"
       style={{
+        fontFamily: "'TT-Paplane', sans-serif", 
         backgroundImage: `url('/ultimateGrass.svg')`,
         backgroundRepeat: 'repeat-x',
         backgroundPosition: 'botton -10px',
@@ -18,11 +19,11 @@ const Footer = () => {
         </a>
         <span>&nbsp;</span>
         <a href="https://www.instagram.com/brhs.hacks/" target="_blank" rel="noopener noreferrer" className="mx-2">
-          <img src="insta.png" className="hover:scale-120 transition duration-350" width="50" height="50" alt="insta" />
+          <img src="insta.png" className="hover:scale-120 transition duration-350" width="55" height="55" alt="insta" />
         </a>
       </div>
       <div id="footer_copyrt font-breulgroteska" className="text-base">
-        Copyright © Hack BRHS
+        Copyright © Hack BRHS | Copyright © C.O.D.E. Club
       </div>
       <div className="text-lg">
         <a href="https://mlh.io/privacy" target="_blank" rel="noopener noreferrer" className="text-white no-underline font-breulgroteska hover:font-bold mx-2">Privacy Policy</a>

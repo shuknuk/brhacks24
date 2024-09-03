@@ -77,3 +77,8 @@ body {
   font-family: 'Epicfusion'; 
   src: url('../fonts/EpicFusion.ttf') format('opentype');
 }
+
+@font-face {
+  font-family: 'TT-Paplane';
+  src: url('../fonts/TT-Paplane-Regular.ttf') format('opentype');
+}
