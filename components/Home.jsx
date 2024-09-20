@@ -74,11 +74,11 @@ export default function Home() {
       </div>
       <h2
         id="title"
-        className="text-center font-black uppercase leading-none"
+        className="text-center font-black uppercase leading-none fancy"
         style={{
           fontSize: "100px",
           textShadow: "2px 4px 6px rgba(0, 0, 0, 0.5)",
-          fontFamily: "'TT-Paplane', sans-serif",
+          fontFamily: ", sans-serif",
         }}
       >
         BRHS Hacks
