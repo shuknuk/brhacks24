@@ -10,7 +10,7 @@ const Schedule = () => {
     { Time: "11:00 AM", Event: "Professor Bajwa", Location: "Auditorium" },
     { Time: "12:00 PM", Event: "Lunch", Location: "Big Cafe" },
     { Time: "1:00 PM", Event: "Competitions", Location: "Room 103" },
-    { Time: "1:00 PM", Event: "AI / Machine Learning", Location: "Room 105" },
+    { Time: "1:00 PM", Event: "AI / ML", Location: "Room 105" },
     { Time: "1:00 PM", Event: "Girls Who Code", Location: "Room 172" },
     { Time: "2:00 PM", Event: "Python", Location: "Room 104" },
     { Time: "2:00 PM", Event: "Professor McKee", Location: "Auditorium" },
