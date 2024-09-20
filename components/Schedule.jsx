@@ -5,16 +5,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Schedule = () => {
   const scheduleData = [
-    { Time: "10:00 AM", Event: "Opening", Location: "Auditorium" },
+    { Time: "10:00 AM", Event: "Opening Ceremony 🎉", Location: "Auditorium" },
     { Time: "11:00 AM", Event: "Data Visualization", Location: "Room 104" },
     { Time: "11:00 AM", Event: "Professor Bajwa", Location: "Auditorium" },
-    { Time: "12:00 PM", Event: "LUNCH", Location: "Big Cafe" },
+    { Time: "12:00 PM", Event: "Lunch", Location: "Big Cafe" },
     { Time: "1:00 PM", Event: "Competitions", Location: "Room 103" },
-    { Time: "1:00 PM", Event: "AI/ML", Location: "Room 105" },
+    { Time: "1:00 PM", Event: "AI / Machine Learning", Location: "Room 105" },
     { Time: "1:00 PM", Event: "Girls Who Code", Location: "Room 172" },
     { Time: "2:00 PM", Event: "Python", Location: "Room 104" },
-    { Time: "2:00 PM", Event: "Professor McKee", Location: "Room 171" },
-    { Time: "2:00 PM", Event: "Professor McKee", Location: "Room 173" },
+    { Time: "2:00 PM", Event: "Professor McKee", Location: "Auditorium" },
     { Time: "3:00 PM", Event: "Automotive Mechanical Club", Location: "Room 103" },
     { Time: "3:00 PM", Event: "Java", Location: "Room 105" },
     { Time: "3:00 PM", Event: "SCYE", Location: "Room 172" },
@@ -27,7 +26,7 @@ const Schedule = () => {
     { Time: "6:00 PM", Event: "Robotics Team", Location: "Room 104" },
     { Time: "6:00 PM", Event: "Quantum Computing", Location: "Room 171" },
     { Time: "6:00 PM", Event: "Data Struc", Location: "Room 173" },
-    { Time: "7:00 PM", Event: "DINNER", Location: "Big Cafe" },
+    { Time: "7:00 PM", Event: "Dinner 🍝", Location: "Big Cafe" },
     { Time: "7:30 PM", Event: "Judging Begins", Location: "Big Cafe" },
   ];
 
