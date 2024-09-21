@@ -6,12 +6,13 @@ const teamData = {
   Official: [
     { name: "Saanvi G.", role: "Head", imageUrl: "/person.svg" },
     { name: "Kinshuk G.", role: "Tech & Design Head", imageUrl: "/person.svg" },
-    { name: "Shreya G.", role: "Finance Head", imageUrl: "/person.svg" },
-    { name: "Divyansha N.", role: "Finance Head", imageUrl: "/person.svg" },
-    { name: "Joon D.", role: "Outreach Head", imageUrl: "/person.svg" },
+    { name: "Shreya G.", role: "Co-Finance Head", imageUrl: "/person.svg" },
+    { name: "Divyansha N.", role: "Co-Finance Head", imageUrl: "/person.svg" },
+    { name: "Joon D.", role: "Co-Outreach Head", imageUrl: "/person.svg" },
+    { name: "Karolina T.", role: "Co-Outreach Head", imageUrl: "/person.svg" },
     { name: "Afraz A.", role: "Social Media Head", imageUrl: "/person.svg" },
-    { name: "Arnav D.", role: "Events & Logistics Head", imageUrl: "/person.svg" },
-    { name: "Ayushmaan M.", role: "Events & Logistics Head", imageUrl: "/person.svg" },
+    { name: "Arnav D.", role: "Co-Events & Logistics Head", imageUrl: "/person.svg" },
+    { name: "Ayushmaan M.", role: "Co-Events & Logistics Head", imageUrl: "/person.svg" },
   ],
   Finance: [
     { name: "Vedaang V.", role: "Finance Member", imageUrl: "/person.svg" },
@@ -21,7 +22,6 @@ const teamData = {
   ],
   Outreach: [
     { name: "Wesley L.", role: "Outreach Member", imageUrl: "/person.svg" },
-    { name: "Karolina T.", role: "Outreach Member", imageUrl: "/person.svg" },
     { name: "Dimah A.", role: "Outreach Member", imageUrl: "/person.svg" },
     { name: "Darsh S.", role: "Outreach Member", imageUrl: "/person.svg" },
   ],
