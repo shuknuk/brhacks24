@@ -135,7 +135,7 @@ const Team = () => {
               className="w-21 h-15 absolute bottom-[-45px]"
             />
             <h3 className="text-xl font-semibold text-green-700">{member.name}</h3>
-            <h3 className="text-sm text-black z-0 ml-8 font-extrabold relative top-2 truncate max-w-[80%]"> {/* Reduced font size */}
+            <h3 className="text-sm text-black z-0 ml-8 font-extrabold relative top-5 truncate max-w-[80%]"> {/* Reduced font size */}
               {member.role}
             </h3>
           </div>
