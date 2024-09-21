@@ -15,33 +15,33 @@ const teamData = {
     { name: "Ayushmaan M.", role: "Co-Events & Logistics Head", imageUrl: "/person.svg" },
   ],
   Finance: [
-    { name: "Vedaang V.", role: "Finance Member", imageUrl: "/person.svg" },
-    { name: "Victoria W.", role: "Finance Member", imageUrl: "/person.svg" },
-    { name: "Soham C.", role: "Finance Member", imageUrl: "/person.svg" },
-    { name: "Anika S.", role: "Finance Member", imageUrl: "/person.svg" },
+    { name: "Vedaang V.", role: "Finance", imageUrl: "/person.svg" },
+    { name: "Victoria W.", role: "Finance", imageUrl: "/person.svg" },
+    { name: "Soham C.", role: "Finance", imageUrl: "/person.svg" },
+    { name: "Anika S.", role: "Finance", imageUrl: "/person.svg" },
   ],
   Outreach: [
-    { name: "Wesley L.", role: "Outreach Member", imageUrl: "/person.svg" },
-    { name: "Dimah A.", role: "Outreach Member", imageUrl: "/person.svg" },
-    { name: "Darsh S.", role: "Outreach Member", imageUrl: "/person.svg" },
+    { name: "Wesley L.", role: "Outreach", imageUrl: "/person.svg" },
+    { name: "Dimah A.", role: "Outreach", imageUrl: "/person.svg" },
+    { name: "Darsh S.", role: "Outreach", imageUrl: "/person.svg" },
   ],
   "Tech & Design": [
-    { name: "Andrew Z.", role: "Tech & Design Member", imageUrl: "/person.svg" },
-    { name: "Praghya B.", role: "Tech & Design Member", imageUrl: "/person.svg" },
-    { name: "Mohit S.", role: "Tech & Design Member", imageUrl: "/person.svg" },
+    { name: "Andrew Z.", role: "Tech & Design", imageUrl: "/person.svg" },
+    { name: "Praghya B.", role: "Tech & Design", imageUrl: "/person.svg" },
+    { name: "Mohit S.", role: "Tech & Design", imageUrl: "/person.svg" },
     { name: "Anika S.", role: "Tech & Design -- Contributor", imageUrl: "/person.svg" },
   ],
   "Social Media": [
-    { name: "Harshini Y.", role: "Social Media Member", imageUrl: "/person.svg" },
-    { name: "Vedika S.", role: "Social Media Member", imageUrl: "/person.svg" },
-    { name: "Sri K.", role: "Social Media Member", imageUrl: "/person.svg" },
-    { name: "Neha A.", role: "Social Media Member", imageUrl: "/person.svg" },
+    { name: "Harshini Y.", role: "Social Media", imageUrl: "/person.svg" },
+    { name: "Vedika S.", role: "Social Media", imageUrl: "/person.svg" },
+    { name: "Sri K.", role: "Social Media", imageUrl: "/person.svg" },
+    { name: "Neha A.", role: "Social Media", imageUrl: "/person.svg" },
   ],
   "Events & Logistics": [
-    { name: "Kush D.", role: "Events & Logistics Member", imageUrl: "/person.svg" },
-    { name: "Advik J.", role: "Events & Logistics Member", imageUrl: "/person.svg" },
-    { name: "Harshit K.", role: "Events & Logistics Member", imageUrl: "/person.svg" },
-    { name: "Rebecca P.", role: "Events & Logistics Member", imageUrl: "/person.svg" },
+    { name: "Kush D.", role: "Events & Logistics", imageUrl: "/person.svg" },
+    { name: "Advik J.", role: "Events & Logistics", imageUrl: "/person.svg" },
+    { name: "Harshit K.", role: "Events & Logistics", imageUrl: "/person.svg" },
+    { name: "Rebecca P.", role: "Events & Logistics", imageUrl: "/person.svg" },
   ],
 };
 
@@ -51,9 +51,9 @@ const Team = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 500, // Duration of animation (ms)
-      easing: "ease-in-out", // Easing function
-      once: true, // Animation happens only once while scrolling down
+      duration: 500,
+      easing: "ease-in-out",
+      once: true,
     });
   }, []);
 
@@ -62,40 +62,18 @@ const Team = () => {
     setIsDropdownOpen(false);
   };
 
+  const teamMembers = teamData[selectedCategory];
+  const topRowMembers = teamMembers.slice(0, 4);
+  const bottomRowMembers = teamMembers.slice(4);
+
   return (
     <section id="team" className="max-w-7xl mx-auto my-8 p-4">
-      <h1 className="text-4xl font-bold text-green-700 text-center mb-8">
-        Our Team
-      </h1>
+      <h1 className="text-4xl font-bold text-green-700 text-center mb-8">Our Team</h1>
+
       <div className="flex flex-col items-center mb-4">
         <h2 className="text-2xl font-bold text-center">{selectedCategory}</h2>
 
-        {/* Dropdown menu for mobile view */}
-        <div className="relative mt-4 lg:hidden z-20">
-          <button
-            className="nav-item bg-green-600 drop-shadow-lg p-2 rounded transition-all duration-300 text-white"
-            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          >
-            {selectedCategory} {isDropdownOpen ? "▲" : "▼"}
-          </button>
-          {isDropdownOpen && (
-            <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-2xl z-50">
-              {Object.keys(teamData).map((category) => (
-                <button
-                  key={category}
-                  className={`block w-full text-center p-2 rounded-2xl hover:bg-green-200 transition-all duration-300 ${
-                    selectedCategory === category ? "bg-green-300" : "bg-white"
-                  }`}
-                  onClick={() => handleCategoryChange(category)}
-                >
-                  {category}
-                </button>
-              ))}
-            </div>
-          )}
-        </div>
-
-        {/* Horizontal layout for desktop view */}
+        {/* Category Buttons */}
         <div className="hidden lg:flex space-x-4 mt-4">
           {Object.keys(teamData).map((category) => (
             <button
@@ -113,31 +91,55 @@ const Team = () => {
         </div>
       </div>
 
-      {/* Fade animations */}
-      <div className="fade-container">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {teamData[selectedCategory].map((member) => (
-            <div
-              key={member.name}
-              className="relative mb-10 flex flex-col items-center space-y-5 p-3 bg-green-50 rounded-lg shadow-lg"
-              data-aos="fade-up" // Apply AOS fade-up animation
-              data-aos-duration="500" // Duration of the animation
-            >
-              <img
-                src={member.imageUrl}
-                alt={member.name}
-                className="w-24 h-24 rounded-full object-cover"
-              />
-              <img
-                src="/logNew.svg"
-                alt="logNew"
-                className="w-21 h-15 absolute bottom-[-45px] "
-              />
-              <h3 className="text-xl font-semibold text-green-700">{member.name}</h3>
-              <h3 className="text-black z-0 ml-8 font-extrabold relative top-2">{member.role}</h3>
-            </div>
-          ))}
-        </div>
+      {/* Grid Layout */}
+      <div className="grid grid-cols-4 gap-6 mb-10"> {/* Added bottom margin to the top row */}
+        {topRowMembers.map((member) => (
+          <div
+            key={member.name}
+            className="relative mb-10 flex flex-col items-center space-y-5 p-3 bg-green-50 rounded-lg shadow-lg"
+            data-aos="fade-up"
+          >
+            <img
+              src={member.imageUrl}
+              alt={member.name}
+              className="w-24 h-24 rounded-full object-cover"
+            />
+            <img
+              src="/logNew.svg"
+              alt="logNew"
+              className="w-21 h-15 absolute bottom-[-45px]"
+            />
+            <h3 className="text-xl font-semibold text-green-700">{member.name}</h3>
+            <h3 className="text-black z-0 ml-8 font-extrabold relative top-2 truncate max-w-[80%]">
+              {member.role}
+            </h3>
+          </div>
+        ))}
+      </div>
+
+      <div className="grid grid-cols-5 gap-6">
+        {bottomRowMembers.map((member) => (
+          <div
+            key={member.name}
+            className="relative mb-10 flex flex-col items-center space-y-5 p-3 bg-green-50 rounded-lg shadow-lg"
+            data-aos="fade-up"
+          >
+            <img
+              src={member.imageUrl}
+              alt={member.name}
+              className="w-24 h-24 rounded-full object-cover"
+            />
+            <img
+              src="/logNew.svg"
+              alt="logNew"
+              className="w-21 h-15 absolute bottom-[-45px]"
+            />
+            <h3 className="text-xl font-semibold text-green-700">{member.name}</h3>
+            <h3 className="text-sm text-black z-0 ml-8 font-extrabold relative top-2 truncate max-w-[80%]"> {/* Reduced font size */}
+              {member.role}
+            </h3>
+          </div>
+        ))}
       </div>
     </section>
   );
