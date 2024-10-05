@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 const handleAlert = (e) => {
   e.stopPropagation(); // Prevent the click event from propagating to the parent
-  alert("Register form coming soon...");
+  window.open("https://forms.gle/wATGGMEjPcV1Ppd89", "_blank");
 };
 
 const About = () => {

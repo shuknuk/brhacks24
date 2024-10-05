@@ -8,7 +8,7 @@ const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleAlert = () => {
-    alert("Register form coming soon...");
+    window.open("https://forms.gle/wATGGMEjPcV1Ppd89", "_blank");
   };
 
   const scrollToTop = () => {
