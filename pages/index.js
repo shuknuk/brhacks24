@@ -5,6 +5,7 @@ import HomeComponent from "../components/Home";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 import About from "../components/About";
+import JudgesAndSpeakers from "@/components/JudgesAndSpeakers";
 
 import Team from "../components/Team";
 import Schedule from "../components/Schedule";
@@ -19,6 +20,7 @@ export default function Home() {
 
       <About />
       <Team />
+      <JudgesAndSpeakers />
       <Schedule />
       <FAQ />
       <Sponsors />

@@ -24,7 +24,7 @@ const NavBar = () => {
 
   const navItems = [
     { to: "about", text: "About" },
-    { to: "team", text: "Team" },
+    { to: "team", text: "Team/Panelists" },
     { to: "schedule", text: "Schedule" },
     { to: "faq", text: "FAQ" },
     { to: "sponsors", text: "Sponsors" },
