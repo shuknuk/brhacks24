@@ -14,6 +14,12 @@ const sponsors = [
     style: "col-span-2 row-span-1 justify-self-center", // centered
   },
   {
+    name: "M & E Engineering",
+    link: "https://www.meengineers.com/",
+    imageUrl: "/sponsors24/mAndEengineers.jpg",
+    style: "col-span-2 row-span-1 justify-self-center", // centered
+  },
+  {
     name: "Perfect Connections",
     link: "https://www.perfectconnectionsinc.com/",
     imageUrl: "/sponsors24/Perfect Connections.png",
