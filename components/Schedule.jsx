@@ -16,7 +16,6 @@ const Schedule = () => {
     { Time: "2:00 PM", Event: "Professor McKee", Location: "Auditorium" },
     { Time: "3:00 PM", Event: "Automotive Mechanical Club", Location: "Room 103" },
     { Time: "3:00 PM", Event: "Java", Location: "Room 105" },
-    { Time: "3:00 PM", Event: "SCYE", Location: "Room 172" },
     { Time: "4:00 PM", Event: "BR Prints", Location: "Room 105" },
     { Time: "4:00 PM", Event: "CyBR Hacks", Location: "Room 171" },
     { Time: "4:00 PM", Event: "C++", Location: "Room 173" },
@@ -24,10 +23,12 @@ const Schedule = () => {
     // { Time: "5:00 PM", Event: "Math and Physics Journal", Location: "Room 105" },
     { Time: "5:00 PM", Event: "Web Dev", Location: "Room 172" },
     { Time: "5:00 PM", Event: "CS Competitions", Location: "Room 172" },
+    { Time: "5:00 PM", Event: "SCYE", Location: "Room 172" },
     { Time: "6:00 PM", Event: "Robotics Team", Location: "Room 105" },
     { Time: "6:00 PM", Event: "Quantum Computing", Location: "Room 171" },
     { Time: "6:00 PM", Event: "Data Structures", Location: "Room 173" },
     { Time: "7:00 PM", Event: "Dinner 🍝", Location: "Big Cafe" },
+    { Time: "7:15 PM", Event: "General CS Knowledge Competition", Location: "Big Cafe" },
     { Time: "7:30 PM", Event: "Judging Begins", Location: "Big Cafe" },
   ];
 
