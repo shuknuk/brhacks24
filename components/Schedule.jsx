@@ -25,7 +25,7 @@ const Schedule = () => {
     { Time: "5:00 PM", Event: "Web Dev", Location: "Room 172" },
     { Time: "6:00 PM", Event: "Robotics Team", Location: "Room 105" },
     { Time: "6:00 PM", Event: "Quantum Computing", Location: "Room 171" },
-    { Time: "6:00 PM", Event: "Data Struc", Location: "Room 173" },
+    { Time: "6:00 PM", Event: "Data Structures", Location: "Room 173" },
     { Time: "7:00 PM", Event: "Dinner 🍝", Location: "Big Cafe" },
     { Time: "7:30 PM", Event: "Judging Begins", Location: "Big Cafe" },
   ];
