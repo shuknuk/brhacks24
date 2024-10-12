@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 const judgesAndSpeakers = [
   { name: "Andy Siyuan Feng", role: "Judge", imageUrl: "/person.svg" },
   { name: "Malihe Aliasgari", role: "Judge", imageUrl: "/person.svg" },
+  { name: "Shajina Anand", role: "Judge", imageUrl: "/person.svg" },
   { name: "Professor Bajwa", role: "Speaker", imageUrl: "/person.svg" },
   { name: "Professor McKee", role: "Speaker", imageUrl: "/person.svg" },
 ];
