@@ -41,22 +41,52 @@ const About = () => {
           <p className="text-sm text-gray-500 text-center font-bold mt-3">Click to Enlarge</p>
           {/* Register Button */}
           <div className="text-center mb-4">
-            <button
-              onClick={handleAlert}
-              className="mt-4 text-white py-2 px-6 rounded-lg bg-green-600 hover:bg-green-900 shadow-lg transition duration-300 ease-in-out mb-4"
-            >
-              Register Now!
-            </button>
-            </div>
-            <div className="text-center mb-4">
-            <button
-              onClick={() => window.open("https://brhs-hackathon-2024.devpost.com", "_blank")}
-              className="text-white py-2 px-6 rounded-lg bg-green-600 hover:bg-green-900 shadow-lg transition duration-300 ease-in-out mb-4"
-            >
-              Submit Project to DevPost
-            </button>
-            </div>
-            
+  <button
+    onClick={(e) => {
+      e.stopPropagation();
+      window.open("https://forms.gle/wATGGMEjPcV1Ppd89", "_blank");
+    }}
+    className="mt-4 text-white py-2 px-6 rounded-lg bg-green-600 hover:bg-green-900 shadow-lg transition duration-300 ease-in-out mb-4"
+  >
+    Register Now!
+  </button>
+</div>
+
+  <div className="text-center mb-4">
+    <button
+      onClick={(e) => {
+        e.stopPropagation();
+        window.open("https://brhs-hackathon-2024.devpost.com", "_blank");
+      }}
+      className="text-white py-2 px-6 rounded-lg bg-green-600 hover:bg-green-900 shadow-lg transition duration-300 ease-in-out mb-4"
+    >
+      Submit Project to DevPost
+    </button>
+  </div>
+
+  <div className="text-center mb-4">
+    <button
+      onClick={(e) => {
+        e.stopPropagation();
+        window.open("https://docs.google.com/presentation/d/1dfMl4KqjjRHynXWXTEjjSXi6eW7BPf_Q/edit?usp=sharing&ouid=107838871474242393229&rtpof=true&sd=true", "_blank");
+      }}
+      className="text-white py-2 px-6 rounded-lg bg-green-600 hover:bg-green-900 shadow-lg transition duration-300 ease-in-out mb-4"
+    >
+      Opening Presentation
+    </button>
+  </div>
+
+  <div className="text-center mb-4">
+    <button
+      onClick={(e) => {
+        e.stopPropagation();
+        window.open("https://docs.google.com/presentation/d/1yV5fajqmH7EMQFNZ6PocXtSKOJnRXoNnN9c-8p-0-Ck/edit?usp=sharing", "_blank");
+      }}
+      className="text-white py-2 px-6 rounded-lg bg-green-600 hover:bg-green-900 shadow-lg transition duration-300 ease-in-out mb-4"
+    >
+      McKee's Presentation - Social Engineering
+    </button>
+  </div>
         </div>
 
         {/* Text Content */}
