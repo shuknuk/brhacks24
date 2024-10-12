@@ -53,7 +53,7 @@ const About = () => {
               onClick={() => window.open("https://brhs-hackathon-2024.devpost.com", "_blank")}
               className="text-white py-2 px-6 rounded-lg bg-green-600 hover:bg-green-900 shadow-lg transition duration-300 ease-in-out mb-4"
             >
-              Submit to DevPost
+              Submit Project to DevPost
             </button>
             </div>
             
