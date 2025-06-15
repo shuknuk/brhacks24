@@ -1,6 +1,39 @@
-## BR Hacks 24
+# BRHacks 2024 – Official Website
+
+This is the official website for **BRHacks 2024**, the second annual student-led hackathon at Bridgewater-Raritan High School. The site served as a one-stop hub for event information, team registration, sponsors, and live-day logistics. Designed with modern UI principles and built using a component-based architecture.
+
+## 🌐 Live Site
+[https://brhacks24.vercel.app/](https://brhacks24.vercel.app/)
+
+## 🧠 Tech Stack
+- [Next.js](https://nextjs.org/) (App Router)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Vercel](https://vercel.com/) (Hosting)
+- [Figma](https://figma.com/) (Design)
+
+## 🧩 Features
+- Fully responsive, modern single-page design
+- Smooth page transitions with Framer Motion
+- Custom sections for schedule, FAQs, sponsors, and team
+- Easy-to-update JSON structure for adding content
+- Hosted and deployed with Vercel
+
+## 👨‍💻 My Role
+As **Director of Tech & Design**, I:
+- Spearheaded the front-end architecture using Next.js and Tailwind CSS
+- Designed and implemented the overall look, feel, and responsiveness of the site
+- Built out key sections including Hero, Schedule, About Us, FAQ, and Sponsors
+- Managed GitHub repository and version control workflow
+- Provided live-day technical support and oversaw day-of updates
+
+## 🏁 Outcome
+The site supported a successful BRHacks 2024 event, onboarding over 100 participants and streamlining all digital communications. It improved significantly on the 2023 site’s UX and tech stack.
 
 The source code files for the official Bridgewater-Raritan High School's 2024 Hackathon!
+
+---
 
 ## Clone and run on your local machine: 
 
